@@ -9,7 +9,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 2.426392078399658,
+          "generation_time": 2.1314504146575928,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -167,7 +167,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8862979412078857,
+          "generation_time": 1.8923554420471191,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -325,7 +325,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.886831283569336,
+          "generation_time": 1.8945915699005127,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -483,7 +483,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8841524124145508,
+          "generation_time": 1.8905892372131348,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -641,7 +641,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.865647554397583,
+          "generation_time": 1.8775148391723633,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -804,7 +804,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8739299774169922,
+          "generation_time": 1.8619260787963867,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -962,7 +962,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8864943981170654,
+          "generation_time": 1.8671340942382812,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1120,7 +1120,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8630070686340332,
+          "generation_time": 1.8902556896209717,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1278,7 +1278,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.866297960281372,
+          "generation_time": 1.8941571712493896,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1436,7 +1436,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8666296005249023,
+          "generation_time": 1.8990960121154785,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1599,7 +1599,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8595671653747559,
+          "generation_time": 1.86141037940979,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1757,7 +1757,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8381657600402832,
+          "generation_time": 1.8598973751068115,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -1915,7 +1915,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.85546875,
+          "generation_time": 1.864670753479004,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -2073,7 +2073,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.841799020767212,
+          "generation_time": 1.8627917766571045,
           "savings_percent": 0,
           "convergence_history": [
             {
@@ -2231,7 +2231,7 @@
           "stopped_early": false,
           "actual_steps": 30,
           "max_steps": 30,
-          "generation_time": 1.8701891899108887,
+          "generation_time": 1.8703360557556152,
           "savings_percent": 0,
           "convergence_history": [
             {

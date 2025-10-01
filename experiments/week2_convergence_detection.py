@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Week 2: Dynamic Convergence Detection
+Week 2 v2: Perceptual Convergence Detection
 
-Instead of predicting steps from text, we DETECT convergence during generation.
+LESSON LEARNED: Latent changes don't correlate with visual changes!
 
-Key idea: Monitor how much the latent changes each step. When change is small,
-the image has converged - stop early!
+NEW APPROACH: Measure PERCEPTUAL changes (what you actually see)
+instead of latent space changes.
 """
 
 import torch
@@ -13,14 +13,20 @@ from diffusers import StableDiffusionPipeline
 import time
 from pathlib import Path
 import json
+import lpips
+from PIL import Image
+import numpy as np
 
-class ConvergenceDetector:
+
+class PerceptualConvergenceDetector:
     """
-    Detects when diffusion process has converged by monitoring latent changes
+    Detects convergence by measuring PERCEPTUAL changes (visual)
+    instead of latent space changes
     """
     
     def __init__(self, model_id="runwayml/stable-diffusion-v1-5"):
-        print("🔬 Initializing Convergence Detector...")
+        print("🔬 Initializing Perceptual Convergence Detector v2...")
+        print("   (Learning from v1: latent changes were wrong metric!)")
         
         self.pipe = StableDiffusionPipeline.from_pretrained(
             model_id,
@@ -30,44 +36,54 @@ class ConvergenceDetector:
         self.pipe = self.pipe.to("cuda")
         self.pipe.enable_attention_slicing()
         
+        # Load LPIPS for perceptual similarity
+        print("   Loading LPIPS (perceptual metric)...")
+        self.lpips_model = lpips.LPIPS(net='alex').cuda()
+        
         print("✓ Ready!")
     
-    def measure_latent_change(self, latent_current, latent_previous):
+    def decode_latents(self, latents):
         """
-        Measure how much the latent changed between steps
+        Decode latents to pixel images
+        """
+        # Scale latents
+        latents = 1 / 0.18215 * latents
         
-        Returns:
-            - mean_change: Average pixel change
-            - max_change: Maximum pixel change
-            - relative_change: Change relative to magnitude
+        # Decode with VAE
+        with torch.no_grad():
+            image = self.pipe.vae.decode(latents).sample
+        
+        # Convert to [-1, 1] range for LPIPS
+        return image
+    
+    def measure_perceptual_change(self, latent_current, latent_previous):
+        """
+        Measure PERCEPTUAL change between consecutive steps
+        
+        Uses LPIPS (Learned Perceptual Image Patch Similarity)
+        Returns perceptual distance (lower = more similar)
         """
         if latent_previous is None:
             return None
         
-        # Calculate absolute difference
-        diff = torch.abs(latent_current - latent_previous)
+        # Decode both latents to images
+        img_current = self.decode_latents(latent_current)
+        img_previous = self.decode_latents(latent_previous)
         
-        mean_change = diff.mean().item()
-        max_change = diff.max().item()
+        # Measure perceptual difference
+        with torch.no_grad():
+            perceptual_dist = self.lpips_model(img_current, img_previous)
         
-        # Relative change (normalized by current magnitude)
-        magnitude = torch.abs(latent_current).mean().item()
-        relative_change = mean_change / (magnitude + 1e-8)
-        
-        return {
-            'mean_change': mean_change,
-            'max_change': max_change,
-            'relative_change': relative_change,
-        }
+        return perceptual_dist.item()
     
-    def has_converged(self, change_history, window=3, threshold=0.01):
+    def has_converged(self, change_history, window=3, threshold=0.02):
         """
-        Determine if generation has converged
+        Determine if generation has converged based on perceptual changes
         
         Args:
-            change_history: List of recent change measurements
+            change_history: List of recent perceptual changes
             window: Number of recent steps to consider
-            threshold: Maximum allowed change to consider converged
+            threshold: Maximum perceptual change to consider converged
         
         Returns:
             bool: True if converged
@@ -86,20 +102,22 @@ class ConvergenceDetector:
     def generate_with_early_stopping(
         self, 
         prompt, 
-        max_steps=50,
-        min_steps=10,
-        convergence_threshold=0.01,
+        max_steps=30,
+        min_steps=15,  # Higher min_steps since decoding is slower
+        convergence_threshold=0.02,
+        check_every=2,  # Check every N steps (decoding is expensive)
         seed=42
     ):
         """
-        Generate image with dynamic early stopping
+        Generate image with perceptual early stopping
         
         Args:
             prompt: Text prompt
             max_steps: Maximum steps to run
             min_steps: Minimum steps before checking convergence
-            convergence_threshold: Threshold for convergence detection
-            seed: Random seed for reproducibility
+            convergence_threshold: Threshold for perceptual convergence
+            check_every: Check convergence every N steps (save computation)
+            seed: Random seed
         
         Returns:
             image, actual_steps, convergence_data
@@ -116,21 +134,33 @@ class ConvergenceDetector:
         def callback(step, timestep, latents):
             nonlocal previous_latent, stopped_early, actual_steps
             
-            # Measure change from previous step
-            change = self.measure_latent_change(latents, previous_latent)
+            # Only check every N steps (decoding is expensive)
+            if step % check_every != 0:
+                previous_latent = latents.clone()
+                return False
             
-            if change:
-                change_history.append(change['relative_change'])
+            # Measure perceptual change
+            if previous_latent is not None:
+                perceptual_change = self.measure_perceptual_change(
+                    latents, previous_latent
+                )
+                
+                change_history.append(perceptual_change)
                 convergence_data.append({
                     'step': step,
-                    'mean_change': change['mean_change'],
-                    'relative_change': change['relative_change'],
+                    'perceptual_change': perceptual_change,
                 })
+                
+                print(f"   Step {step}: perceptual change = {perceptual_change:.4f}")
                 
                 # Check for convergence (after minimum steps)
                 if step >= min_steps:
-                    if self.has_converged(change_history, threshold=convergence_threshold):
-                        print(f"   ⚡ Converged at step {step}! Stopping early.")
+                    if self.has_converged(
+                        change_history, 
+                        window=2,  # Smaller window since we check less frequently
+                        threshold=convergence_threshold
+                    ):
+                        print(f"   ⚡ CONVERGED at step {step}! Stopping early.")
                         stopped_early = True
                         actual_steps = step
                         return True  # Stop generation
@@ -139,7 +169,8 @@ class ConvergenceDetector:
             return False
         
         print(f"\n🎨 Generating: '{prompt}'")
-        print(f"   Max steps: {max_steps}, Will check convergence after step {min_steps}")
+        print(f"   Max steps: {max_steps}, checking convergence after step {min_steps}")
+        print(f"   Checking every {check_every} steps (decoding is expensive)")
         
         start_time = time.time()
         
@@ -164,7 +195,7 @@ class ConvergenceDetector:
         if stopped_early:
             print(f"   💰 Saved {savings:.1f}% computation")
         else:
-            print(f"   ⚠️  Ran full {max_steps} steps (didn't converge early)")
+            print(f"   ⚠️  Ran full {max_steps} steps")
         
         return result.images[0], actual_steps, {
             'stopped_early': stopped_early,
@@ -175,27 +206,32 @@ class ConvergenceDetector:
             'convergence_history': convergence_data,
         }
     
-    def run_experiments(self, test_prompts, thresholds=[0.005, 0.01, 0.02]):
+    def run_experiments(self, test_prompts, thresholds=[0.01, 0.02, 0.03]):
         """
-        Test different convergence thresholds
+        Test different perceptual convergence thresholds
         """
-        results_dir = Path("week2_convergence_results")
+        results_dir = Path("week2_perceptual_results")
         results_dir.mkdir(exist_ok=True)
         
         print("="*60)
-        print("🔬 WEEK 2: CONVERGENCE DETECTION EXPERIMENTS")
+        print("🔬 WEEK 2 v2: PERCEPTUAL CONVERGENCE DETECTION")
         print("="*60)
         print()
-        print("Testing dynamic early stopping with different thresholds:")
-        print(f"  Thresholds: {thresholds}")
-        print(f"  Prompts: {len(test_prompts)}")
+        print("NEW APPROACH: Measuring visual/perceptual changes")
+        print("(Not latent changes - we learned those don't work!)")
+        print()
+        print(f"Testing thresholds: {thresholds}")
+        print(f"Prompts: {len(test_prompts)}")
+        print()
+        print("Note: This is slower than v1 (decoding at each check)")
+        print("But measures what actually matters - visual quality!")
         print()
         
         all_results = []
         
         for threshold in thresholds:
             print(f"\n{'='*60}")
-            print(f"🎯 Testing threshold: {threshold}")
+            print(f"🎯 Testing perceptual threshold: {threshold}")
             print(f"{'='*60}")
             
             threshold_results = []
@@ -204,8 +240,9 @@ class ConvergenceDetector:
                 image, steps, data = self.generate_with_early_stopping(
                     prompt,
                     max_steps=30,
-                    min_steps=10,
+                    min_steps=15,
                     convergence_threshold=threshold,
+                    check_every=2,  # Check every 2 steps
                 )
                 
                 # Save image
@@ -226,17 +263,20 @@ class ConvergenceDetector:
             })
         
         # Save results
-        with open(results_dir / "convergence_results.json", "w") as f:
+        with open(results_dir / "perceptual_results.json", "w") as f:
             json.dump(all_results, f, indent=2)
         
         # Print summary
         print("\n" + "="*60)
-        print("📊 SUMMARY")
+        print("📊 SUMMARY - PERCEPTUAL CONVERGENCE")
         print("="*60)
         
         for threshold_data in all_results:
             threshold = threshold_data['threshold']
             results = threshold_data['results']
+            
+            if not results:
+                continue
             
             avg_steps = sum(r['data']['actual_steps'] for r in results) / len(results)
             avg_savings = sum(r['data']['savings_percent'] for r in results) / len(results)
@@ -252,11 +292,11 @@ class ConvergenceDetector:
         print(f"📁 Results saved to: {results_dir}")
         print("="*60)
         print()
-        print("NEXT STEPS:")
-        print("1. Look at the generated images")
-        print("2. Compare early-stopped vs full 30-step images")
-        print("3. Find optimal threshold (balance quality vs speed)")
-        print("4. Document findings for Week 3!")
+        print("COMPARE:")
+        print("  Week 2 v1 (latent changes): 0% savings")
+        print("  Week 2 v2 (perceptual): [see results above]")
+        print()
+        print("Did perceptual detection work better? Check the images!")
 
 
 # =============================================================================
@@ -266,19 +306,32 @@ class ConvergenceDetector:
 if __name__ == "__main__":
     print("""
     ╔══════════════════════════════════════════════════════════╗
-    ║  WEEK 2: DYNAMIC CONVERGENCE DETECTION                  ║
+    ║  WEEK 2 v2: PERCEPTUAL CONVERGENCE DETECTION            ║
     ║                                                          ║
-    ║  Instead of predicting steps from text, we DETECT       ║
-    ║  when the diffusion process has converged by monitoring ║
-    ║  latent changes. Stop when converged = adaptive speed!  ║
+    ║  LESSON FROM v1: Latent changes don't work!             ║
     ║                                                          ║
-    ║  Expected time: 10-15 minutes                           ║
+    ║  NEW APPROACH: Measure VISUAL/PERCEPTUAL changes        ║
+    ║  using LPIPS (what humans actually perceive).           ║
+    ║                                                          ║
+    ║  This measures what matters: visual quality!            ║
+    ║                                                          ║
+    ║  Expected time: 15-20 minutes (slower but better!)      ║
     ╚══════════════════════════════════════════════════════════╝
     """)
     
-    input("Press ENTER to start experiments...")
+    # Check if lpips is installed
+    try:
+        import lpips
+    except ImportError:
+        print("❌ LPIPS not installed!")
+        print("   Install with: pip install lpips")
+        print()
+        input("Install lpips and press ENTER to continue...")
+        import lpips
     
-    # Test prompts (diverse set)
+    input("Press ENTER to start perceptual convergence experiments...")
+    
+    # Test prompts (same as v1 for comparison)
     test_prompts = [
         "a red apple",
         "a serene mountain landscape at sunset",
@@ -287,17 +340,18 @@ if __name__ == "__main__":
         "an intricate steampunk mechanical clock",
     ]
     
-    detector = ConvergenceDetector()
+    detector = PerceptualConvergenceDetector()
     
     # Test different thresholds
+    # Note: Perceptual thresholds are different scale than latent thresholds
     detector.run_experiments(
         test_prompts=test_prompts,
-        thresholds=[0.005, 0.01, 0.02],  # Strict, medium, lenient
+        thresholds=[0.01, 0.02, 0.03],  # LPIPS scale
     )
     
-    print("\n🎉 Week 2 experiments complete!")
+    print("\n🎉 Week 2 v2 complete!")
     print("\nWhat you learned:")
-    print("  • How to detect convergence dynamically")
-    print("  • Whether early stopping maintains quality")
-    print("  • Optimal threshold for stopping")
-    print("\nNext: Analyze results and refine approach!")
+    print("  • Latent changes ≠ Visual changes (v1 lesson)")
+    print("  • Perceptual metrics matter more (v2 approach)")
+    print("  • How to pivot when hypothesis fails")
+    print("\nNext: Analyze if perceptual detection works better!")

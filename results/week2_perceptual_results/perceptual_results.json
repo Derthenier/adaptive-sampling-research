@@ -1,0 +1,1112 @@
+[
+  {
+    "threshold": 0.01,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 16,
+          "max_steps": 30,
+          "generation_time": 3.8765242099761963,
+          "savings_percent": 46.666666666666664,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.002010884927585721
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.003481343388557434
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.008286292664706707
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.012697651982307434
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.010622221976518631
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.007188071962445974
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.006847064010798931
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.008744675666093826
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.011747433803975582
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.016422433778643608
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.02610599622130394
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.040104370564222336
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.06462180614471436
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.12941455841064453
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.0003704412083607167
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 18,
+          "max_steps": 30,
+          "generation_time": 3.507282018661499,
+          "savings_percent": 40.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0014252953696995974
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0015082757454365492
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0012805715668946505
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0015469465870410204
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.00200232258066535
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.0029822506476193666
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004602615721523762
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.007398984394967556
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01054655946791172
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01572059467434883
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.021431880071759224
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.03111470490694046
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.04747529327869415
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.06978165358304977
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00023205223260447383
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 18,
+          "max_steps": 30,
+          "generation_time": 3.5025877952575684,
+          "savings_percent": 40.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0003927186189685017
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0016516352770850062
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004932377953082323
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0054604909382760525
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.005202107131481171
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.004431782756000757
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004350669216364622
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.00615333067253232
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.008749921806156635
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.012734570540487766
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019239267334342003
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.02770187333226204
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.03888969123363495
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.044933609664440155
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00019335045362822711
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.500822067260742,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00040782574797049165
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0011364753590896726
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004686733707785606
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.013117038644850254
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.018249182030558586
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.016846787184476852
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.015972735360264778
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.020502328872680664
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.024126632139086723
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01970093324780464
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.020337408408522606
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.023012565448880196
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.02897670865058899
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.04309476166963577
+            },
+            {
+              "step": 30,
+              "perceptual_change": 6.457824201788753e-05
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.4979093074798584,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00020803377265110612
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0005510140326805413
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0018430269556120038
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.005777445156127214
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.01428714208304882
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.013523131608963013
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.010483434423804283
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.010627317242324352
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01144725177437067
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.015234507620334625
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019705504179000854
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.025516416877508163
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.029065055772662163
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.038122255355119705
+            },
+            {
+              "step": 30,
+              "perceptual_change": 9.24654959817417e-05
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "threshold": 0.02,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 20,
+          "max_steps": 30,
+          "generation_time": 3.5137760639190674,
+          "savings_percent": 33.33333333333333,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.002010884927585721
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.003481343388557434
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.008286292664706707
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.012697651982307434
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.010622221976518631
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.007188071962445974
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.006847064010798931
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.008744675666093826
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.011747433803975582
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.016422433778643608
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.02610599622130394
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.040104370564222336
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.06462180614471436
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.12941455841064453
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.0003704412083607167
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 22,
+          "max_steps": 30,
+          "generation_time": 3.5124642848968506,
+          "savings_percent": 26.666666666666668,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0014252953696995974
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0015082757454365492
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0012805715668946505
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0015469465870410204
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.00200232258066535
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.0029822506476193666
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004602615721523762
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.007398984394967556
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01054655946791172
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01572059467434883
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.021431880071759224
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.03111470490694046
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.04747529327869415
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.06978165358304977
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00023205223260447383
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 22,
+          "max_steps": 30,
+          "generation_time": 3.521851062774658,
+          "savings_percent": 26.666666666666668,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0003927186189685017
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0016516352770850062
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004932377953082323
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0054604909382760525
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.005202107131481171
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.004431782756000757
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004350669216364622
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.00615333067253232
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.008749921806156635
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.012734570540487766
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019239267334342003
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.02770187333226204
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.03888969123363495
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.044933609664440155
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00019335045362822711
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 16,
+          "max_steps": 30,
+          "generation_time": 3.5122570991516113,
+          "savings_percent": 46.666666666666664,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00040782574797049165
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0011364753590896726
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004686733707785606
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.013117038644850254
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.018249182030558586
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.016846787184476852
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.015972735360264778
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.020502328872680664
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.024126632139086723
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01970093324780464
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.020337408408522606
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.023012565448880196
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.02897670865058899
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.04309476166963577
+            },
+            {
+              "step": 30,
+              "perceptual_change": 6.457824201788753e-05
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.509570360183716,
+          "savings_percent": 0.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00020803377265110612
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0005510140326805413
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0018430269556120038
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.005777445156127214
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.01428714208304882
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.013523131608963013
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.010483434423804283
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.010627317242324352
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01144725177437067
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.015234507620334625
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019705504179000854
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.025516416877508163
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.029065055772662163
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.038122255355119705
+            },
+            {
+              "step": 30,
+              "perceptual_change": 9.24654959817417e-05
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "threshold": 0.03,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.03,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 22,
+          "max_steps": 30,
+          "generation_time": 3.5409328937530518,
+          "savings_percent": 26.666666666666668,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.002010884927585721
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.003481343388557434
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.008286292664706707
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.012697651982307434
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.010622221976518631
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.007188071962445974
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.006847064010798931
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.008744675666093826
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.011747433803975582
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.016422433778643608
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.02610599622130394
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.040104370564222336
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.06462180614471436
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.12941455841064453
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.0003704412083607167
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.03,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 24,
+          "max_steps": 30,
+          "generation_time": 3.5264108180999756,
+          "savings_percent": 20.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0014252953696995974
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0015082757454365492
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0012805715668946505
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0015469465870410204
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.00200232258066535
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.0029822506476193666
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004602615721523762
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.007398984394967556
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01054655946791172
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01572059467434883
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.021431880071759224
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.03111470490694046
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.04747529327869415
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.06978165358304977
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00023205223260447383
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.03,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.5154879093170166,
+          "savings_percent": 0.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.0003927186189685017
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0016516352770850062
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004932377953082323
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.0054604909382760525
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.005202107131481171
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.004431782756000757
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.004350669216364622
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.00615333067253232
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.008749921806156635
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.012734570540487766
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019239267334342003
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.02770187333226204
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.03888969123363495
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.044933609664440155
+            },
+            {
+              "step": 30,
+              "perceptual_change": 0.00019335045362822711
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.03,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.5073885917663574,
+          "savings_percent": 0.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00040782574797049165
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0011364753590896726
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.004686733707785606
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.013117038644850254
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.018249182030558586
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.016846787184476852
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.015972735360264778
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.020502328872680664
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.024126632139086723
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.01970093324780464
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.020337408408522606
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.023012565448880196
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.02897670865058899
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.04309476166963577
+            },
+            {
+              "step": 30,
+              "perceptual_change": 6.457824201788753e-05
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.03,
+        "data": {
+          "stopped_early": true,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 3.5109918117523193,
+          "savings_percent": 0.0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "perceptual_change": 0.00020803377265110612
+            },
+            {
+              "step": 4,
+              "perceptual_change": 0.0005510140326805413
+            },
+            {
+              "step": 6,
+              "perceptual_change": 0.0018430269556120038
+            },
+            {
+              "step": 8,
+              "perceptual_change": 0.005777445156127214
+            },
+            {
+              "step": 10,
+              "perceptual_change": 0.01428714208304882
+            },
+            {
+              "step": 12,
+              "perceptual_change": 0.013523131608963013
+            },
+            {
+              "step": 14,
+              "perceptual_change": 0.010483434423804283
+            },
+            {
+              "step": 16,
+              "perceptual_change": 0.010627317242324352
+            },
+            {
+              "step": 18,
+              "perceptual_change": 0.01144725177437067
+            },
+            {
+              "step": 20,
+              "perceptual_change": 0.015234507620334625
+            },
+            {
+              "step": 22,
+              "perceptual_change": 0.019705504179000854
+            },
+            {
+              "step": 24,
+              "perceptual_change": 0.025516416877508163
+            },
+            {
+              "step": 26,
+              "perceptual_change": 0.029065055772662163
+            },
+            {
+              "step": 28,
+              "perceptual_change": 0.038122255355119705
+            },
+            {
+              "step": 30,
+              "perceptual_change": 9.24654959817417e-05
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
