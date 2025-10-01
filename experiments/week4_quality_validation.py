@@ -1,23 +1,25 @@
 #!/usr/bin/env python3
 """
-Week 4 Track 1: Quality Validation
-Generate A/B comparisons and compute quality metrics
+Week 4 Track 1: Quality Validation - FIXED VERSION
+The callback return False doesn't actually stop the pipeline in diffusers!
+We need to manually run the denoising loop.
 """
 
 import torch
-from diffusers import StableDiffusionPipeline
+from diffusers import StableDiffusionPipeline, DDIMScheduler
 import lpips
 from PIL import Image
 import numpy as np
 from pathlib import Path
 import json
 from transformers import CLIPProcessor, CLIPModel
+from tqdm import tqdm
 
-class QualityValidator:
-    """Validate that 18-step generation maintains quality vs 30-step baseline"""
+class QualityValidatorFixed:
+    """Validate that adaptive stopping maintains quality - ACTUALLY stops early"""
     
     def __init__(self, threshold=0.04):
-        print("🔬 Quality Validation Mode")
+        print("🔬 Quality Validation Mode (FIXED)")
         
         # Load SD pipeline
         self.pipe = StableDiffusionPipeline.from_pretrained(
@@ -27,6 +29,9 @@ class QualityValidator:
         ).to("cuda")
         self.pipe.enable_attention_slicing()
         
+        # Use DDIM scheduler for consistency
+        self.pipe.scheduler = DDIMScheduler.from_config(self.pipe.scheduler.config)
+        
         # Load metrics
         self.lpips_model = lpips.LPIPS(net='alex').cuda()
         self.clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to("cuda")
@@ -34,7 +39,7 @@ class QualityValidator:
         
         self.threshold = threshold
         
-        self.results_dir = Path('week4_quality_validation')
+        self.results_dir = Path('week4_quality_validation_FIXED')
         self.results_dir.mkdir(exist_ok=True)
     
     def pil_to_tensor(self, image):
@@ -68,66 +73,133 @@ class QualityValidator:
         
         return score
     
-    def generate_adaptive(self, prompt, seed):
-        """Generate with adaptive stopping"""
+    def latents_to_pil(self, latents):
+        """Convert latents to PIL image"""
+        latents = latents / self.pipe.vae.config.scaling_factor
+        with torch.no_grad():
+            image = self.pipe.vae.decode(latents, return_dict=False)[0]
         
-        previous_image = None
-        stopped_step = None
+        image = (image / 2 + 0.5).clamp(0, 1)
+        image = image.cpu().permute(0, 2, 3, 1).float().numpy()
+        image = (image * 255).round().astype("uint8")
+        return Image.fromarray(image[0])
+    
+    def generate_adaptive_manual(self, prompt, seed, num_inference_steps=30):
+        """
+        MANUALLY run the denoising loop with early stopping.
+        This is the CORRECT way to actually stop early!
+        """
+        # Prepare inputs
+        generator = torch.Generator(device="cuda").manual_seed(seed)
         
-        def callback(step, timestep, latents):
-            nonlocal previous_image, stopped_step
-            
-            if step < 15 or step % 2 != 0:
-                return
-            
-            latents_scaled = latents / self.pipe.vae.config.scaling_factor
-            current_image = self.pipe.vae.decode(latents_scaled, return_dict=False)[0]
-            
-            if previous_image is not None:
-                with torch.no_grad():
-                    img1_norm = previous_image * 2 - 1
-                    img2_norm = current_image * 2 - 1
-                    change = self.lpips_model(img1_norm, img2_norm).item()
-                
-                if change < self.threshold:
-                    stopped_step = step
-                    return False
-            
-            previous_image = current_image.clone()
+        # Encode prompt
+        text_inputs = self.pipe.tokenizer(
+            prompt,
+            padding="max_length",
+            max_length=self.pipe.tokenizer.model_max_length,
+            truncation=True,
+            return_tensors="pt",
+        )
+        text_embeddings = self.pipe.text_encoder(text_inputs.input_ids.to("cuda"))[0]
         
-        generator = torch.Generator("cuda").manual_seed(seed)
-        result = self.pipe(
-            prompt=prompt,
-            num_inference_steps=30,
-            guidance_scale=7.5,
+        # Uncond embeddings for classifier-free guidance
+        uncond_input = self.pipe.tokenizer(
+            "",
+            padding="max_length",
+            max_length=self.pipe.tokenizer.model_max_length,
+            return_tensors="pt",
+        )
+        uncond_embeddings = self.pipe.text_encoder(uncond_input.input_ids.to("cuda"))[0]
+        
+        # Concatenate for classifier-free guidance
+        text_embeddings = torch.cat([uncond_embeddings, text_embeddings])
+        
+        # Prepare latents
+        latents = torch.randn(
+            (1, self.pipe.unet.config.in_channels, 64, 64),
             generator=generator,
-            callback=callback,
-            callback_steps=1,
+            device="cuda",
+            dtype=torch.float16,
         )
         
-        return result.images[0], stopped_step if stopped_step else 30
+        # Set timesteps
+        self.pipe.scheduler.set_timesteps(num_inference_steps)
+        timesteps = self.pipe.scheduler.timesteps
+        
+        # Scale initial noise
+        latents = latents * self.pipe.scheduler.init_noise_sigma
+        
+        # Denoising loop with early stopping
+        previous_image_tensor = None
+        stopped_step = None
+        
+        for i, t in enumerate(tqdm(timesteps, desc="Adaptive generation")):
+            # Expand latents for classifier-free guidance
+            latent_model_input = torch.cat([latents] * 2)
+            latent_model_input = self.pipe.scheduler.scale_model_input(latent_model_input, t)
+            
+            # Predict noise
+            with torch.no_grad():
+                noise_pred = self.pipe.unet(
+                    latent_model_input,
+                    t,
+                    encoder_hidden_states=text_embeddings,
+                ).sample
+            
+            # Classifier-free guidance
+            noise_pred_uncond, noise_pred_text = noise_pred.chunk(2)
+            noise_pred = noise_pred_uncond + 7.5 * (noise_pred_text - noise_pred_uncond)
+            
+            # Compute previous latents
+            latents = self.pipe.scheduler.step(noise_pred, t, latents).prev_sample
+            
+            # Check for convergence (after step 15, every 2 steps)
+            if i >= 15 and i % 2 == 0:
+                # Decode current latents
+                current_image_tensor = self.latents_to_pil(latents)
+                current_tensor = self.pil_to_tensor(current_image_tensor) * 2 - 1
+                
+                if previous_image_tensor is not None:
+                    # Compute LPIPS
+                    with torch.no_grad():
+                        change = self.lpips_model(previous_image_tensor, current_tensor).item()
+                    
+                    print(f"  Step {i}: LPIPS change = {change:.4f}")
+                    
+                    if change < self.threshold:
+                        stopped_step = i
+                        print(f"  ✓ Converged at step {i}!")
+                        break
+                
+                previous_image_tensor = current_tensor
+        
+        # Decode final image
+        final_image = self.latents_to_pil(latents)
+        actual_steps = stopped_step if stopped_step else num_inference_steps
+        
+        return final_image, actual_steps
     
     def generate_baseline(self, prompt, seed, steps=30):
-        """Generate baseline with fixed steps"""
-        
-        generator = torch.Generator("cuda").manual_seed(seed)
+        """Generate baseline with fixed steps (using standard pipeline)"""
+        generator = torch.Generator(device="cuda").manual_seed(seed)
         result = self.pipe(
             prompt=prompt,
             num_inference_steps=steps,
             guidance_scale=7.5,
             generator=generator,
         )
-        
         return result.images[0]
     
     def validate_prompt(self, prompt, seed=42):
         """Generate both versions and compare quality"""
         
-        print(f"\n📝 {prompt}")
+        print(f"\n{'='*60}")
+        print(f"📝 {prompt}")
+        print(f"{'='*60}")
         
-        # Generate adaptive version
-        print("  🔄 Generating adaptive...")
-        adaptive_img, adaptive_steps = self.generate_adaptive(prompt, seed)
+        # Generate adaptive version (ACTUALLY stops early now!)
+        print("  🔄 Generating adaptive (with REAL early stopping)...")
+        adaptive_img, adaptive_steps = self.generate_adaptive_manual(prompt, seed)
         
         # Generate baseline
         print("  🔄 Generating baseline (30 steps)...")
@@ -144,15 +216,15 @@ class QualityValidator:
         baseline_clip = self.compute_clip_score(baseline_img, prompt)
         clip_diff = adaptive_clip - baseline_clip
         
-        # Create comparison image
-        comparison = self.create_comparison(adaptive_img, baseline_img, prompt, 
-                                           adaptive_steps, lpips_dist, clip_diff)
-        
-        # Save
+        # Save images
         prompt_slug = prompt[:40].replace(" ", "_").replace(",", "")
-        comparison.save(self.results_dir / f"{prompt_slug}_comparison.png")
         adaptive_img.save(self.results_dir / f"{prompt_slug}_adaptive.png")
         baseline_img.save(self.results_dir / f"{prompt_slug}_baseline.png")
+        
+        # Create comparison
+        comparison = self.create_comparison(adaptive_img, baseline_img, prompt, 
+                                           adaptive_steps, lpips_dist, clip_diff)
+        comparison.save(self.results_dir / f"{prompt_slug}_comparison.png")
         
         # Results
         results = {
@@ -168,7 +240,9 @@ class QualityValidator:
         }
         
         # Print
-        print(f"  ✓ Adaptive: {adaptive_steps} steps")
+        print(f"\n  ✓ Adaptive: {adaptive_steps} steps")
+        print(f"  ✓ Baseline: 30 steps")
+        print(f"  ✓ Speedup: {results['speedup_percent']:.1f}%")
         print(f"  ✓ LPIPS distance: {lpips_dist:.4f} {'✅ LOW' if lpips_dist < 0.1 else '⚠️ HIGH'}")
         print(f"  ✓ CLIP scores: {adaptive_clip:.2f} vs {baseline_clip:.2f} (diff: {clip_diff:+.2f})")
         
@@ -180,11 +254,9 @@ class QualityValidator:
         width, height = img1.size
         comparison = Image.new('RGB', (width * 2 + 20, height + 100), 'white')
         
-        # Paste images
         comparison.paste(img1, (0, 80))
         comparison.paste(img2, (width + 20, 80))
         
-        # Add text (using PIL - simple version)
         from PIL import ImageDraw, ImageFont
         draw = ImageDraw.Draw(comparison)
         
@@ -195,14 +267,9 @@ class QualityValidator:
             font = ImageFont.load_default()
             font_small = font
         
-        # Title
         draw.text((10, 10), f"Prompt: {prompt[:60]}", fill='black', font=font_small)
-        
-        # Labels
         draw.text((10, 50), f"Adaptive ({steps} steps)", fill='blue', font=font)
         draw.text((width + 30, 50), f"Baseline (30 steps)", fill='red', font=font)
-        
-        # Metrics
         draw.text((10, height + 85), 
                  f"LPIPS: {lpips_dist:.4f} | CLIP diff: {clip_diff:+.2f}", 
                  fill='black', font=font_small)
@@ -213,10 +280,9 @@ class QualityValidator:
         """Run full quality validation"""
         
         print("="*60)
-        print("WEEK 4: QUALITY VALIDATION")
+        print("WEEK 4: QUALITY VALIDATION (FIXED VERSION)")
         print("="*60)
         
-        # Diverse prompts for validation
         prompts = [
             "a portrait of a woman with red hair",
             "a serene mountain landscape at sunset",
@@ -238,7 +304,8 @@ class QualityValidator:
         all_results = []
         
         for i, prompt in enumerate(prompts, 1):
-            print(f"\n[{i}/{len(prompts)}]")
+            print(f"\n{'='*60}")
+            print(f"[{i}/{len(prompts)}]")
             results = self.validate_prompt(prompt, seed=42+i)
             all_results.append(results)
         
@@ -277,7 +344,6 @@ class QualityValidator:
         print(f"\n⚡ Speedup:")
         print(f"  Mean: {np.mean(speedups):.1f}%")
         
-        # Assessment
         print(f"\n🎯 QUALITY ASSESSMENT:")
         
         avg_lpips = np.mean(lpips_values)
@@ -302,18 +368,18 @@ class QualityValidator:
 if __name__ == "__main__":
     print("""
     ╔══════════════════════════════════════════════════════════╗
-    ║  WEEK 4 TRACK 1: QUALITY VALIDATION                     ║
+    ║  WEEK 4 TRACK 1: QUALITY VALIDATION (FIXED)            ║
     ║                                                          ║
-    ║  Generating A/B comparisons: adaptive vs baseline       ║
-    ║  Computing quality metrics: LPIPS, CLIP                 ║
+    ║  This version ACTUALLY stops early!                     ║
+    ║  Manual denoising loop with real early stopping         ║
     ║                                                          ║
-    ║  Duration: 30-40 minutes                                ║
+    ║  Duration: 40-50 minutes (manual loop is slower)        ║
     ╚══════════════════════════════════════════════════════════╝
     """)
     
-    input("Press ENTER to start quality validation...")
+    input("Press ENTER to start FIXED quality validation...")
     
-    validator = QualityValidator(threshold=0.04)
+    validator = QualityValidatorFixed(threshold=0.04)
     results = validator.run_validation(num_prompts=15)
     
     print("\n🎉 Quality validation complete!")

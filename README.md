@@ -1,497 +1,276 @@
-# ContentAware: Adaptive Step Diffusion
+# ⚠️ ContentAware Adaptive Diffusion - Research Archive
 
-> **Research Project**: Making Stable Diffusion faster through perceptual convergence detection
+> **IMPORTANT: This approach was found to be fundamentally flawed. This repository documents the research process, including what didn't work and why.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.8+-ee4c2c.svg)](https://pytorch.org/)
-[![Research Progress](https://img.shields.io/badge/Progress-Week%203%20Complete-success.svg)](https://github.com/Derthenier/adaptive-sampling-research)
+[![Research Status](https://img.shields.io/badge/Status-Failed%20Approach-red)]()
+[![Week](https://img.shields.io/badge/Week-4%2F12-yellow)]()
+[![Learning](https://img.shields.io/badge/Learning-High%20Value-green)]()
+
+## 🚨 Critical Finding (Week 4)
+
+**The perceptual convergence detection approach does not work for diffusion model early stopping.**
+
+### What We Attempted
+Monitor LPIPS (perceptual distance) changes between consecutive steps during generation. When changes fall below a threshold, stop generation early to achieve speedup while maintaining quality.
+
+### Why It Failed
+**Scheduler Mismatch:** Diffusion models use a noise schedule designed for N steps. Stopping at step M < N produces partially denoised latents that result in low-quality, unrecognizable images.
+
+**Validation Bug:** Week 3 appeared to succeed with 96% validation rate, but this was due to a bug where the pipeline callback didn't actually stop generation. All images ran the full 30 steps, making comparisons meaningless.
+
+**Key Insight:** Step-to-step convergence ≠ readiness for output. The fact that changes slow down doesn't mean the image is complete.
 
 ---
 
-## 🎯 The Problem
+## 📊 What Actually Happened
 
-Current text-to-image diffusion models (Stable Diffusion, SDXL) use a **fixed number of denoising steps** for all images:
+### Week 3 Results (Appeared Successful - BUG)
+```
+✅ 96% success rate
+✅ 40% speedup reported
+✅ LPIPS distance: 0.0 (images identical)
+```
 
-- Simple prompts ("a red apple") → 30 steps → **Overkill** ⚠️
-- Complex prompts ("cyberpunk city at night") → 30 steps → **Wasted compute** ⚠️
-- No adaptation to content → **40% slower than necessary** ⚠️
+**Reality:** Pipeline callback's `return False` didn't stop generation. All images ran 30 steps. Comparisons were 30-step vs 30-step.
 
-**Result**: Every image takes the same time, regardless of complexity.
+### Week 4 Results (Fixed Implementation - TRUTH)
+```
+❌ Images at step 18 are unrecognizable
+❌ LPIPS distance: 0.65 (completely different images)
+❌ CLIP score drops 4-12 points (semantic degradation)
+❌ Only 40% of prompts stopped early anyway
+```
+
+**Reality:** When generation actually stops at step 18 in a 30-step schedule, latents are still partially noisy and decode to garbage.
 
 ---
 
-## 💡 Our Solution
+## 🔬 Technical Analysis
 
-**ContentAware** uses **perceptual convergence detection** to stop generation dynamically:
+### The Core Problem
 
-### Key Innovation
-We monitor perceptual changes during generation using LPIPS (Learned Perceptual Image Patch Similarity):
-- ✅ **Detects convergence** in real-time
-- ✅ **Stops early** when visual quality plateaus
-- ✅ **No retraining** required (inference-time only)
-- ✅ **Content-aware** (adapts per image)
-- ✅ **Lightweight** (<0.1s overhead)
-
-### How It Works
 ```python
-# Every 2 steps after step 15:
-if perceptual_change(current_image, previous_image) < threshold:
-    return current_image  # Converged! Stop early.
-# Otherwise, continue denoising...
+# What we tried (BROKEN):
+scheduler.set_timesteps(30)  # Plan for 30 steps
+for step in range(30):
+    latents = denoise_step(latents)
+    if converged(latents):
+        break  # Stop at step 18
+image = decode(latents)  # ❌ Still noisy! Designed for 12 more steps!
+
+# What's needed (CORRECT):
+optimal_steps = predict_steps(prompt)  # Decide upfront: 18 steps
+scheduler.set_timesteps(optimal_steps)  # Plan for 18 steps
+for step in range(optimal_steps):
+    latents = denoise_step(latents)
+image = decode(latents)  # ✅ Fully denoised for 18-step schedule
 ```
 
-Unlike distillation methods (LCM, Progressive Distillation) that require expensive retraining of the entire model, our approach works on **any existing Stable Diffusion checkpoint** without modification.
+### Why Monitoring Convergence Fails
 
----
-
-## 📊 Results (Week 3 - VALIDATED ✅)
-
-| Metric | Target | **Achieved** | Status |
-|--------|--------|--------------|--------|
-| Speed Improvement | 30-50% | **38-40%** | ✅ **ACHIEVED** |
-| Quality Retention | >95% | **96-100%** | ✅ **VALIDATED** |
-| Predictor Overhead | <0.1s | **~0.01s** | ✅ **EXCELLENT** |
-| Generalization | 90%+ prompts | **96%** (24/25) | ✅ **EXCELLENT** |
-
-### 🎉 Key Findings
-
-**Method Performance:**
-- **38-40% speedup** (19 steps vs 30 baseline)
-- **96-100% early stopping success rate**
-- **Works across all content types** (portraits, landscapes, objects, complex scenes, abstract)
-- **Optimal LPIPS threshold: 0.040** (systematically calibrated)
-
-**Hardware:** RTX 5070 Ti 16GB  
-**Baseline:** 2.39s per image (512×512, 30 steps)  
-**With ContentAware:** ~1.5s per image (38% faster)
-
----
-
-## 🔬 Research Progress
-
-### ✅ Week 1: Foundation (COMPLETE)
-**Goal:** Understand baseline and convergence patterns
-
-**Achievements:**
-- Generated 70+ images at varying steps (10-50)
-- Discovered CLIP score limitations (high scores at 10 steps but poor visual quality)
-- Identified need for perceptual metrics
-- Formed hypothesis: dynamic detection > static prediction
-
-**Key Finding:** Visual quality plateaus around 18-20 steps for most prompts.
-
-[See Week 1 results →](results/week1_results/)
-
----
-
-### ✅ Week 2: Breakthrough (COMPLETE)
-**Goal:** Validate perceptual detection approach
-
-**Achievements:**
-- Implemented LPIPS-based convergence detection
-- Initial validation: 26.7% speedup on 5 prompts
-- Proved method concept works
-- But threshold (0.02) needed calibration
-
-**Key Learning:** Method works, but requires proper threshold calibration.
-
----
-
-### ✅ Week 3: Systematic Validation (COMPLETE)
-**Goal:** Calibrate and validate method on diverse prompts
-
-**Phase A - Initial Test (Discovered Issue):**
-- Tested threshold 0.02 on 25 prompts
-- Result: Only 4% success rate (1/25)
-- **Insight:** Threshold too aggressive
-
-**Diagnostic Analysis:**
-- Analyzed LPIPS value distribution across all measurements
-- Found: Threshold 0.02 = 0.6th percentile (extreme!)
-- Median LPIPS: 0.0666 (3.3× higher than threshold)
-- **Recommended:** Threshold 0.04 (4th percentile)
-
-**Phase A - Corrected (SUCCESS ✅):**
-- Re-ran with threshold 0.04
-- **Result: 96% success rate (24/25 prompts)**
-- **Average: 19 steps (38.3% speedup)**
-- Works across categories:
-  - Portraits: 5/5 (100%) - 18 steps
-  - Landscapes: 5/5 (100%) - 18 steps
-  - Objects: 4/5 (80%) - 20.4 steps
-  - Complex scenes: 5/5 (100%) - 18 steps
-  - Abstract: 3/3 (100%) - 22 steps
-  - Edge cases: 2/2 (100%) - 18 steps
-
-**Phase B - Fine-Tuning (OPTIMIZED ✅):**
-- Tested thresholds: 0.035, 0.040, 0.045, 0.050, 0.055, 0.060
-- **Optimal found: 0.040**
-- **Result: 100% success rate (5/5 prompts)**
-- **Average: 18 steps (40.0% speedup)**
-
-**Key Research Contributions:**
-1. **Threshold calibration is critical** - 2× difference (0.02 → 0.04) meant 0% → 100% success
-2. **Sharp performance boundary** - Clean transition at threshold 0.04
-3. **Content-agnostic convergence** - Complex scenes don't need more steps (counterintuitive!)
-4. **Systematic validation essential** - Broad testing revealed calibration needs
-
-[See Week 3 results →](results/week3_phase_a_CORRECTED/) | [See fine-tuning →](results/week3_phase_b_FINAL/)
-
----
-
-### 🔄 Week 4: In Progress
-**Goals:**
-1. Quality validation (A/B comparisons, LPIPS/CLIP metrics)
-2. SDXL integration (scale to SOTA model)
-3. Multi-sampler testing (DPM++, Euler, DDIM)
-
----
-
-## 🏗️ Architecture
-
+The noise schedule timesteps are:
 ```
-Input Prompt
-    ↓
-┌─────────────────────────────────┐
-│  Stable Diffusion Pipeline      │
-│  (Unmodified base model)        │
-└─────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────────┐
-│  Adaptive Denoising Loop                │
-│                                         │
-│  for step in range(max_steps):          │
-│      latent = denoise(latent)           │
-│                                         │
-│      if step >= 15 and step % 2 == 0:   │
-│          current_img = decode(latent)   │
-│          lpips = perceptual_dist(       │
-│              current_img,               │
-│              previous_img               │
-│          )                              │
-│                                         │
-│          if lpips < 0.04:               │
-│              STOP EARLY!                │
-│                                         │
-│      previous_img = current_img         │
-└─────────────────────────────────────────┘
-    ↓
-Output Image (40% Faster!)
+[999, 966, 933, 900, ..., 400, ..., 100, 67, 33, 0]
+  ↑                        ↑              ↑
+High noise            Step 18        Final step
 ```
 
-**Key Parameters:**
-- **LPIPS Threshold:** 0.04 (calibrated)
-- **Min Steps:** 15 (safety buffer)
-- **Check Frequency:** Every 2 steps
-- **Max Steps:** 30 (baseline)
+At step 18, latents still contain noise meant to be removed by the remaining steps. Decoding at this point produces incomplete images.
+
+**Analogy:** Like taking a cake out of the oven halfway through because "it hasn't changed much in the last minute" - it's still raw inside.
 
 ---
 
-## 🚀 Quick Start
+## 📚 Research Journey (What We Learned)
 
-### Installation
+### ✅ Week 1: Baseline Analysis
+- Measured quality vs. step count relationships
+- Established that fewer steps can work
+- Identified that convergence rates vary by prompt
 
-```bash
-# Clone repository
-git clone https://github.com/Derthenier/adaptive-sampling-research.git
-cd adaptive-sampling-research
+### ✅ Week 2: Perceptual Detection Concept
+- Implemented LPIPS monitoring during generation
+- Initial tests on 5 prompts looked promising
+- **Mistake:** Small sample size + callback bug = false validation
 
-# Install dependencies
-pip install -r requirements.txt
-```
+### ❌ Week 3: False Validation
+- Tested on 25 diverse prompts
+- Calibrated threshold to 0.04
+- Reported 96% success, 40% speedup
+- **Critical Bug:** Callback `return False` didn't stop pipeline
+- All images actually ran 30 steps, making all LPIPS comparisons 0.0
 
-### Run Your Own Experiments
-
-```bash
-# Week 1: Baseline analysis
-python experiments/week1_experiments.py
-
-# Week 3: Test calibrated threshold
-python experiments/week3_phase_a_CORRECTED.py
-
-# Week 3: Fine-tune threshold
-python experiments/week3_phase_b_fine_tuning.py
-```
-
-### Generate with Adaptive Sampling
-
-```bash
-# Use the validated method
-python generation/generate_adaptive.py \
-    --prompt "a mountain landscape at sunset" \
-    --threshold 0.04
-```
+### 🔍 Week 4: Truth Discovery
+- Fixed callback bug to implement real early stopping
+- Results showed unrecognizable images at early stop
+- Discovered fundamental scheduler mismatch problem
+- **Key Learning:** This approach cannot work as designed
 
 ---
 
-## 📁 Project Structure
+## 💡 What Would Actually Work
+
+### Approach 1: Predictor-Based (Recommended)
+```python
+# Predict optimal steps BEFORE generation
+optimal_steps = predictor_model(prompt_features)  # e.g., 18 steps
+
+# Generate with correct schedule
+scheduler.set_timesteps(optimal_steps)
+image = generate(prompt, steps=optimal_steps)  # Fully denoised
+```
+
+**Pros:** 
+- Proper scheduler setup
+- Same speedup goal achievable
+- Clean, working approach
+
+**Training Data:**
+- Run prompts at various step counts (15, 18, 20, 22, 25, 30)
+- Measure quality metrics
+- Train predictor: features → optimal steps
+
+### Approach 2: Fixed Step Reduction (Simple)
+```python
+# Just use 20 steps for everything
+image = generate(prompt, steps=20)  # 33% speedup guaranteed
+```
+
+**Pros:**
+- Dead simple
+- Works immediately
+- Guarantees speedup with quality maintained
+
+### Approach 3: Multi-Stage Adaptive
+- Generate with schedule for N steps
+- Evaluate quality at step M
+- If insufficient, re-generate with schedule for N+K steps
+- Proper rescheduling at each stage
+
+---
+
+## 📁 Repository Structure
 
 ```
 adaptive-sampling-research/
-├── experiments/                # Research experiments
-│   ├── week1_experiments.py           # Baseline analysis
-│   ├── week2_perceptual_detection.py  # Initial validation
-│   ├── week3_phase_a_CORRECTED.py     # Validated on 25 prompts
-│   ├── week3_phase_b_fine_tuning.py   # Threshold optimization
-│   ├── debug_lpips_values.py          # Diagnostic analysis
-│   └── diagnostic_phase_b.py          # Wide threshold test
-├── generation/                 # Generation scripts
-│   ├── generate_image.py
-│   └── generate_adaptive.py            # With adaptive stopping
-├── planning/                   # Research docs
-│   ├── master_plan.md                 # 12-week roadmap
-│   ├── adaptive_sampling_plan.md      # Detailed plan
-│   └── research_areas.md
-├── papers/                     # Literature
-│   ├── essential_papers.md
-│   └── adaptive_sampling_papers.md
-├── papers/ 
-│   ├── week1_results/              # Week 1 baseline data
-│   ├── week3_phase_a_CORRECTED/    # Corrected validation results
-│   ├── week3_phase_b_FINAL/        # Fine-tuning results
-│   └── diagnostic_phase_b/         # Diagnostic analysis
+├── README.md                           ⚠️  Updated with failure analysis
+├── FAILURE_ANALYSIS.md                 📄 Detailed technical breakdown
+├── CHANGELOG.md                        📝 Complete research journey
+├── experiments/
+│   ├── week1_experiments.py                   ✅ Baseline analysis
+│   ├── week2_perceptual_detection.py          ❌ Initial (buggy) attempt
+│   ├── week3_phase_a_CORRECTED.py             ❌ False validation (bug)
+│   ├── week4_quality_validation_FIXED.py      ✅ Real test (revealed failure)
+│   └── week4_analysis.py                      📊 Failure analysis
+├── week1_results/                      📊 Baseline data (valid)
+├── week3_phase_a_CORRECTED/            ⚠️  Results invalid (callback bug)
+└── week4_quality_validation_FIXED/     ✅ Real results (shows failure)
 ```
 
 ---
 
-## 📚 Key Papers & Related Work
+## 🎓 Key Takeaways
 
-### Foundation Papers
-- **DDPM** (Ho et al., 2020) - Foundation of diffusion models
-- **Latent Diffusion** (Rombach et al., 2022) - Stable Diffusion architecture
-- **DDIM** (Song et al., 2020) - Deterministic sampling
-
-### Related Speedup Methods
-- **LCM** (Luo et al., 2023) - 4-step generation via distillation (requires retraining)
-- **Progressive Distillation** (Salimans & Ho, 2022) - Step reduction via training
-- **DPM-Solver** (Lu et al., 2022) - Better ODE solver (orthogonal to our approach)
-
-### Our Differentiation
-Unlike distillation methods, ContentAware:
-- ✅ No retraining required (works on any checkpoint)
-- ✅ Adapts per-image dynamically
-- ✅ Lightweight (minimal overhead)
-- ❌ Cannot achieve 4-step generation (but 18 steps with zero training!)
-
-[Full reading list →](papers/adaptive_sampling_papers.md)
-
----
-
-## 🎯 Success Metrics
-
-### ✅ Minimum Viable Contribution (ACHIEVED!)
-- [x] 20% speed improvement → **38-40% achieved**
-- [x] <10% quality loss → **Minimal (validation in progress)**
-- [x] Works on 80% of prompts → **96% success rate**
-- [ ] Open source release → **Week 12**
-
-### 🎯 Target Success (ON TRACK)
-- [x] 30-40% speed improvement → **38-40% achieved**
-- [ ] <5% quality loss → **Validation in progress**
-- [x] Works on 90% of prompts → **96% success rate**
-- [ ] 100+ GitHub stars
-- [ ] Community adoption
-
-### 🌟 Stretch Goals
-- [ ] Paper publication (ArXiv/Conference)
-- [ ] Integration into ComfyUI/A1111
-- [ ] SDXL integration
-- [ ] Becomes standard practice
-
----
-
-## 🔬 Methodology Highlights
-
-### Systematic Threshold Calibration
-Our research discovered that threshold selection is critical:
-
-| Threshold | Success Rate | Avg Steps | Speedup | Assessment |
-|-----------|--------------|-----------|---------|------------|
-| 0.020 | 4% | 29.5 | 1.7% | Too aggressive ❌ |
-| 0.035 | 80% | 20.4 | 32% | Borderline ⚠️ |
-| **0.040** | **100%** | **18.0** | **40%** | **Optimal ✅** |
-| 0.045 | 100% | 18.8 | 37% | Safe ✅ |
-| 0.060 | 100% | 23.6 | 21% | Too conservative ⚠️ |
-
-**Key Insight:** Sharp performance boundary at 0.04 indicates robust, predictable behavior.
-
-### LPIPS Distribution Analysis
-- **Median:** 0.0666 (typical perceptual change)
-- **4th percentile:** 0.040 (our threshold)
-- **0.6th percentile:** 0.020 (why initial attempts failed)
-
-**Lesson:** Proper metric calibration requires understanding the full distribution, not just intuition.
-
----
-
-## 🛠️ Hardware Requirements
-
-**Minimum**: 
-- NVIDIA GPU with 8GB+ VRAM
-- CUDA 11.8+
-- 16GB+ system RAM
-
-**Used in This Research**:
-- NVIDIA RTX 5070 Ti (16GB VRAM)
-- CUDA 12.9
-- PyTorch 2.9
-- Generation speed: 2.39s baseline → 1.5s with ContentAware
-
----
-
-## 📊 Visualizations
-
-### Threshold Optimization
-![Threshold Analysis](results/week3_phase_b_FINAL/fine_tuning_analysis.png)
-
-**Left:** Average steps vs threshold - shows 0.04 is optimal  
-**Right:** Speedup vs threshold - 40% speedup at threshold 0.04
-
-### LPIPS Distribution
-![LPIPS Distribution](results/week3_phase_a_results/lpips_analysis.png)
-
-**Left:** Histogram of LPIPS values - threshold 0.02 is in the tail  
-**Right:** LPIPS by category - consistent across content types
-
----
-
-## 🤝 Contributing
-
-This is an active research project in Week 4 of 12. Contributions welcome after Week 8 (publication preparation)!
-
-**Future contribution areas**:
-- Testing on different GPUs/hardware
-- Additional quality metrics
-- SDXL integration
-- Different samplers (DPM++, Euler)
-- Web UI integration
-
----
-
-## 📖 Documentation
-
-- [Master Plan](planning/master_plan.md) - 12-week research roadmap
-- [Implementation Plan](planning/adaptive_sampling_plan.md) - Detailed week-by-week guide
-- [Paper Reading List](papers/adaptive_sampling_papers.md) - Essential papers
-- [Week 1 Hypothesis](planning/week1_hypothesis.md) - Initial analysis
-
----
-
-## 📈 Timeline
-
-**12-Week Research Project** (Current: Week 4)
-
-- ✅ **Phase 1** (Weeks 1-3): Foundation & validation → **COMPLETE**
-- 🔄 **Phase 2** (Weeks 4-6): Quality validation & SDXL → **IN PROGRESS**
-- 📅 **Phase 3** (Weeks 7-9): Multi-sampler & optimization → **PLANNED**
-- 📅 **Phase 4** (Weeks 10-12): Publication & release → **PLANNED**
-
----
-
-## 🔍 Research Insights
+### What We Proved DOESN'T Work
+❌ Monitoring step-to-step convergence during fixed-schedule generation  
+❌ Early stopping in diffusion without rescheduling  
+❌ Using callback `return False` to stop diffusers pipeline  
+❌ Small sample validation (Week 2's 5 prompts)  
 
 ### What We Learned
+✅ Diffusion noise schedules must be set correctly from the start  
+✅ Partial denoising produces unusable images  
+✅ Rigorous validation reveals hidden bugs  
+✅ Negative results are valuable research contributions  
 
-1. **CLIP scores are misleading for convergence**
-   - 10 steps = 96% CLIP score but terrible visual quality
-   - Need perceptual metrics, not semantic metrics
-
-2. **Text features don't predict convergence**
-   - Prompt complexity ≠ generation complexity
-   - Simple and complex prompts converge similarly (~18 steps)
-   - Cannot use text-based static prediction
-
-3. **Perceptual detection > Static prediction**
-   - Dynamic per-image detection is more accurate
-   - LPIPS threshold 0.04 works across content types
-   - Method is content-aware without explicit modeling
-
-4. **Complex scenes don't need more steps** (surprising!)
-   - "busy marketplace with people" stops at 18 steps
-   - "simple red apple" also stops at 18 steps
-   - Diffusion process converges uniformly
-
-5. **Systematic validation is essential**
-   - Week 2: 100% success (5 prompts) - looked great!
-   - Week 3 initial: 4% success (25 prompts) - revealed issue
-   - Week 3 corrected: 96% success - validated properly
-
-**Lesson:** Early positive results can be misleading. Broad validation is critical.
+### Correct Approaches Going Forward
+✅ Predictor-based step selection (before generation)  
+✅ Proper scheduler configuration for chosen step count  
+✅ Fixed step reduction as baseline  
+✅ Large-scale validation (not 5 prompts!)  
 
 ---
 
-## 📝 Citation
+## 📖 For Future Researchers
 
-If you use this work in your research, please cite:
+If you're interested in adaptive sampling for diffusion models:
 
-```bibtex
-@misc{contentaware2025,
-  title={ContentAware: Adaptive Step Diffusion via Perceptual Convergence Detection},
-  author={Aditya Vennelakanti},
-  year={2025},
-  howpublished={\url{https://github.com/Derthenier/adaptive-sampling-research}},
-  note={38-40\% inference speedup with 96\% success rate}
-}
-```
+**Don't do this:**
+- Monitor convergence during fixed-schedule generation
+- Stop early without rescheduling
+- Assume small sample validation is sufficient
 
----
-
-## 📬 Contact
-
-- **Researcher**: Aditya Vennelakanti
-- **Email**: avennelakanti@gmail.com
-- **GitHub**: [@Derthenier](https://github.com/Derthenier)
+**Do this instead:**
+- Predict optimal steps before generation
+- Set scheduler for predicted step count
+- Validate on 50+ diverse prompts
+- Check actual image quality, not just metrics
 
 ---
 
-## 📄 License
+## 📚 Related Work & What Actually Works
 
-MIT License - See [LICENSE](LICENSE) for details
+### Successful Speedup Methods
+- **LCM (Latent Consistency Models):** 4-step generation via distillation
+- **Progressive Distillation:** Halve steps iteratively via training
+- **DPM-Solver++:** Better ODE solver (orthogonal approach)
+- **DDIM:** Deterministic sampling (used as baseline)
+
+### Key Difference
+These methods either:
+1. Retrain/distill the model for fewer steps, OR
+2. Improve the solver/scheduler, OR
+3. Use proper scheduling from the start
+
+They don't try to "stop early" in a fixed schedule.
+
+---
+
+## 🔬 Research Timeline
+
+- **Week 1:** Baseline analysis ✅
+- **Week 2:** Initial perceptual detection ❌ (bug undetected)
+- **Week 3:** False validation ❌ (callback bug)
+- **Week 4:** Failure discovery ✅ (truth revealed)
+- **Week 5+:** Pivot to predictor approach (planned)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **Stability AI** for Stable Diffusion
-- **HuggingFace** for the diffusers library
-- **Research community** for foundational papers
-- **LPIPS authors** (Zhang et al.) for the perceptual metric
-- **Claude AI** for research guidance and methodology design
+This research demonstrates the importance of:
+- Rigorous validation
+- Testing edge cases
+- Visual inspection (not just metrics)
+- Research integrity (documenting failures)
+
+**Bugs happen.** What matters is catching them and learning from them.
 
 ---
 
-## 🔗 Related Projects
+## 📄 License
 
-- [Latent Consistency Models](https://github.com/luosiallen/latent-consistency-model) - 4-step generation via distillation
-- [DPM-Solver](https://github.com/LuChengTHU/dpm-solver) - Fast ODE solver
-- [ControlNet](https://github.com/lllyasviel/ControlNet) - Spatial control for SD
-- [LPIPS](https://github.com/richzhang/PerceptualSimilarity) - Perceptual similarity metric
+MIT License - Use this as a learning resource
 
 ---
 
-## 🌟 Star History
+## 📧 Contact
 
-**Following the research?** Star this repo to get updates!
-
-We're documenting the full research process:
-- ✅ Successes (40% speedup!)
-- ✅ Failures (threshold 0.02 disaster)
-- ✅ Learnings (calibration is critical)
-- ✅ Pivots (text features → perceptual detection)
-
-**Real research is messy. This is what it actually looks like.** 📊
+If you're working on similar problems or have insights, please open an issue!
 
 ---
 
-<div align="center">
+## ⚠️ Final Warning
 
-### **Status: Week 3 COMPLETE ✅ | 40% Speedup VALIDATED**
+**Do not use this code for production.** The approach is fundamentally flawed. This repository exists to document:
+1. What doesn't work
+2. Why it doesn't work
+3. What would work instead
 
-**Building the future of efficient diffusion models, one step at a time.**
+Use the "Correct Approaches" section for guidance on viable methods.
 
-[![GitHub Stars](https://img.shields.io/github/stars/Derthenier/adaptive-sampling-research?style=social)](https://github.com/Derthenier/adaptive-sampling-research)
+---
 
-**Last Updated:** October 2025 | **Progress:** 25% (3/12 weeks)
-
-</div>
+**Last Updated:** October 2025  
+**Status:** Archived as research learning resource  
+**Research Integrity:** Failures documented, lessons shared
