@@ -88,7 +88,7 @@ Output Image (Faster!)
 - Complex prompts: Y steps needed
 - Potential speedup: Z%
 
-[See detailed results →](week1_results/)
+[See detailed results →](results/week1_results/)
 
 ---
 
