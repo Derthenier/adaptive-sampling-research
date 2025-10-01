@@ -1,0 +1,158 @@
+[
+  {
+    "prompt": "swirling colors and abstract shapes, digital art",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2746999263763428,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.027322376146912575,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.1023251861333847,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.06358982622623444,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.09688755869865417,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.1478738933801651,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.18791857361793518,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.09387943893671036,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a geometric pattern with triangles and circles",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2710280418395996,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.0435202494263649,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.055153682827949524,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05934382230043411,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.06342610716819763,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.06289626657962799,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.06211300566792488,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.030916161835193634,
+        "threshold": 0.04,
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "prompt": "watercolor painting of flowing water and light",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2713725566864014,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03015095368027687,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.10903176665306091,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05591438710689545,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.08465662598609924,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.1357412338256836,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.20840057730674744,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.12299343943595886,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  }
+]

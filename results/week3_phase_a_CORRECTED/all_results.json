@@ -1,0 +1,1314 @@
+{
+  "portraits": [
+    {
+      "prompt": "a portrait of a woman with red hair and green eyes",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.6517040729522705,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.039345912635326385,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1391022801399231,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.07642057538032532,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.10245868563652039,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.12753134965896606,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.14103445410728455,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.056656621396541595,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "an old man with a white beard, wise expression",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.68683123588562,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03046010062098503,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.111052505671978,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05247148871421814,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.0729762613773346,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.09028063714504242,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.10474230349063873,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.05669005587697029,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a young child laughing, natural lighting",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.3827738761901855,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.033518724143505096,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.12123831361532211,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.057222530245780945,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.06491757929325104,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.07179997116327286,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.09186990559101105,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.051775991916656494,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a profile view of a person in silhouette",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.3558027744293213,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.0355207584798336,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.12444348633289337,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.06142290681600571,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.10053478926420212,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.21457836031913757,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.36462146043777466,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.0897752121090889,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "headshot photo of a professional businesswoman",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.429229974746704,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.0366375669836998,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.13228392601013184,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.07516609877347946,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.10475382953882217,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.13208255171775818,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.1486433446407318,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.06686601787805557,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ],
+  "landscapes": [
+    {
+      "prompt": "a serene mountain landscape at sunset",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.296841621398926,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03365711122751236,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.11871591955423355,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.055596694350242615,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.0749121680855751,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.11171367764472961,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.16076815128326416,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.09463834762573242,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a tropical beach with palm trees and blue water",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.299445152282715,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.02944905124604702,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10621640086174011,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05188795179128647,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.0690726786851883,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.09576519578695297,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.10737139731645584,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.05842902511358261,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a misty forest with tall trees and morning light",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.285775899887085,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.0332648828625679,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.119264155626297,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.06556142121553421,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.09799270331859589,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.13865868747234344,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.16060727834701538,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.09300325810909271,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a desert landscape with sand dunes and clear sky",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2770488262176514,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03621077910065651,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1267663985490799,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.0648050457239151,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.09278981387615204,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.12446820735931396,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.14571286737918854,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.062165431678295135,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a snowy mountain peak under starry night sky",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.26888108253479,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.02865319326519966,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10676370561122894,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05349702760577202,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.08420321345329285,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.13344189524650574,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.22381940484046936,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.17399877309799194,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "prompt": "a vintage camera on a wooden desk",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.267314910888672,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03147782385349274,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1147434338927269,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.058698900043964386,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.07248949259519577,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.08532463014125824,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.10742273181676865,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.06266182661056519,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a red apple on a white plate",
+      "actual_steps": 30,
+      "max_steps": 30,
+      "stopped_early": false,
+      "generation_time": 2.5444726943969727,
+      "speedup_percent": 0.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.042204637080430984,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.05808252468705177,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.07841101288795471,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.09652146697044373,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.11172477155923843,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.13244834542274475,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.07564181089401245,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a stack of colorful books on a shelf",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.4320478439331055,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.029782695695757866,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1134965568780899,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.06000775098800659,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.07419131696224213,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.0901862159371376,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.10020904242992401,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.0550442598760128,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a steaming cup of coffee on a table",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.307433843612671,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03303063288331032,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.11545200645923615,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.0512799397110939,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.06223319098353386,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.08615785092115402,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.1182422935962677,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.0636325478553772,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a modern smartphone on a marble surface",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.298837423324585,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.028119388967752457,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.09832839667797089,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.04516225680708885,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.05660100281238556,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.06830752640962601,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.0890781506896019,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.050365544855594635,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ],
+  "complex_scenes": [
+    {
+      "prompt": "a busy marketplace with many people and colorful stalls",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.3190910816192627,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.019890284165740013,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.07940039038658142,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.048144932836294174,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.06658551096916199,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.09159845113754272,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.10440439730882645,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.055741772055625916,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a cozy living room with furniture, plants, and decorations",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.274010181427002,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.028227660804986954,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10209892690181732,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05901133641600609,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.0845099613070488,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.12658783793449402,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.17277240753173828,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.10068682581186295,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a futuristic city street with cars and neon lights",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.3307173252105713,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.027476567775011063,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10307028889656067,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.058220669627189636,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.08509188145399094,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.11931979656219482,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.15371958911418915,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.10460560768842697,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a medieval castle on a hill surrounded by villages",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.33612060546875,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03018239513039589,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10871835052967072,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.055735811591148376,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.08143569529056549,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.11115000396966934,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.14383211731910706,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.0843452662229538,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a crowded train station with people and luggage",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2737081050872803,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.02138330042362213,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.08380776643753052,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.048317134380340576,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.06780791282653809,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.09563405066728592,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.12350402772426605,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.06742732971906662,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ],
+  "abstract_artistic": [
+    {
+      "prompt": "swirling colors and abstract shapes, digital art",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2746999263763428,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.027322376146912575,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1023251861333847,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.06358982622623444,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.09688755869865417,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.1478738933801651,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.18791857361793518,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.09387943893671036,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a geometric pattern with triangles and circles",
+      "actual_steps": 30,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2710280418395996,
+      "speedup_percent": 0.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.0435202494263649,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.055153682827949524,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05934382230043411,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.06342610716819763,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.06289626657962799,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.06211300566792488,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.030916161835193634,
+          "threshold": 0.04,
+          "stopped": true
+        }
+      ]
+    },
+    {
+      "prompt": "watercolor painting of flowing water and light",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2713725566864014,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03015095368027687,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.10903176665306091,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05591438710689545,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.08465662598609924,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.1357412338256836,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.20840057730674744,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.12299343943595886,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ],
+  "edge_cases": [
+    {
+      "prompt": "a simple solid red background",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2736408710479736,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.028715316206216812,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.11222860217094421,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.086591437458992,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.15099146962165833,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.19168001413345337,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.20920172333717346,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.14538511633872986,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    },
+    {
+      "prompt": "a single white sphere on black background",
+      "actual_steps": 18,
+      "max_steps": 30,
+      "stopped_early": true,
+      "generation_time": 2.2791495323181152,
+      "speedup_percent": 40.0,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips_change": 0.03091362863779068,
+          "threshold": 0.04,
+          "stopped": true
+        },
+        {
+          "step": 20,
+          "lpips_change": 0.1119886264204979,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 22,
+          "lpips_change": 0.05446726083755493,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 24,
+          "lpips_change": 0.08259452879428864,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 26,
+          "lpips_change": 0.137748584151268,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 28,
+          "lpips_change": 0.2542712986469269,
+          "threshold": 0.04,
+          "stopped": false
+        },
+        {
+          "step": 30,
+          "lpips_change": 0.11044061183929443,
+          "threshold": 0.04,
+          "stopped": false
+        }
+      ]
+    }
+  ]
+}

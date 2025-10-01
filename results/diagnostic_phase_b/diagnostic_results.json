@@ -1,0 +1,1558 @@
+{
+  "a simple red apple": [
+    {
+      "threshold": 0.01,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05323714017868042,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.02,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05323714017868042,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.03,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05323714017868042,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.04,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.05,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.06,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.08,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.1,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.15,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.0366782546043396,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13996146619319916,
+          "below_threshold": true
+        },
+        {
+          "step": 22,
+          "lpips": 0.06878464668989182,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.09513132274150848,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.1619824320077896,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.26313358545303345,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.10399798303842545,
+          "below_threshold": true
+        }
+      ]
+    }
+  ],
+  "a portrait of a woman": [
+    {
+      "threshold": 0.01,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05357188731431961,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.02,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05357188731431961,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.03,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.05357188731431961,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.04,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.05,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.06,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.08,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": true
+        }
+      ]
+    },
+    {
+      "threshold": 0.1,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": true
+        }
+      ]
+    },
+    {
+      "threshold": 0.15,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.03627884015440941,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.13844922184944153,
+          "below_threshold": true
+        },
+        {
+          "step": 22,
+          "lpips": 0.0699147880077362,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.08767659217119217,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.12376415729522705,
+          "below_threshold": true
+        },
+        {
+          "step": 28,
+          "lpips": 0.16293756663799286,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07419054210186005,
+          "below_threshold": true
+        }
+      ]
+    }
+  ],
+  "a mountain landscape": [
+    {
+      "threshold": 0.01,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.0428544357419014,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.02,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.0428544357419014,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.03,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.0428544357419014,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.04,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.05,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.06,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.08,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.1,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.15,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.030769767239689827,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.11293254047632217,
+          "below_threshold": true
+        },
+        {
+          "step": 22,
+          "lpips": 0.057652659714221954,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.07879051566123962,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.13514414429664612,
+          "below_threshold": true
+        },
+        {
+          "step": 28,
+          "lpips": 0.22885248064994812,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.16722673177719116,
+          "below_threshold": false
+        }
+      ]
+    }
+  ],
+  "a busy city street with cars": [
+    {
+      "threshold": 0.01,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.04130490869283676,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.02,
+      "stopped_step": null,
+      "actual_steps": 30,
+      "stopped_early": false,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": false
+        },
+        {
+          "step": 20,
+          "lpips": 0.04130490869283676,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.03,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.04,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.05,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.06,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": false
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": false
+        }
+      ]
+    },
+    {
+      "threshold": 0.08,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": false
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": true
+        }
+      ]
+    },
+    {
+      "threshold": 0.1,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": false
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": false
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": false
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": true
+        }
+      ]
+    },
+    {
+      "threshold": 0.15,
+      "stopped_step": 18,
+      "actual_steps": 18,
+      "stopped_early": true,
+      "detection_log": [
+        {
+          "step": 18,
+          "lpips": 0.02703925222158432,
+          "below_threshold": true
+        },
+        {
+          "step": 20,
+          "lpips": 0.1040930524468422,
+          "below_threshold": true
+        },
+        {
+          "step": 22,
+          "lpips": 0.06064498797059059,
+          "below_threshold": true
+        },
+        {
+          "step": 24,
+          "lpips": 0.086058609187603,
+          "below_threshold": true
+        },
+        {
+          "step": 26,
+          "lpips": 0.11446383595466614,
+          "below_threshold": true
+        },
+        {
+          "step": 28,
+          "lpips": 0.12647823989391327,
+          "below_threshold": true
+        },
+        {
+          "step": 30,
+          "lpips": 0.07534118741750717,
+          "below_threshold": true
+        }
+      ]
+    }
+  ]
+}

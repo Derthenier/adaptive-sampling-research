@@ -1,0 +1,106 @@
+[
+  {
+    "prompt": "a simple solid red background",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2736408710479736,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.028715316206216812,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.11222860217094421,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.086591437458992,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.15099146962165833,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.19168001413345337,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.20920172333717346,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.14538511633872986,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a single white sphere on black background",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2791495323181152,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03091362863779068,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.1119886264204979,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05446726083755493,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.08259452879428864,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.137748584151268,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.2542712986469269,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.11044061183929443,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  }
+]

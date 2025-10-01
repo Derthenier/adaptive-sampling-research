@@ -1,0 +1,167 @@
+[
+  {
+    "prompt": "a portrait of a woman with red hair",
+    "seed": 43,
+    "adaptive_steps": 30,
+    "baseline_steps": 30,
+    "speedup_percent": 0.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 32.43178176879883,
+    "baseline_clip_score": 32.43178176879883,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a serene mountain landscape at sunset",
+    "seed": 44,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 29.169971466064453,
+    "baseline_clip_score": 29.169971466064453,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a vintage camera on a wooden desk",
+    "seed": 45,
+    "adaptive_steps": 30,
+    "baseline_steps": 30,
+    "speedup_percent": 0.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 29.490041732788086,
+    "baseline_clip_score": 29.490041732788086,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a cozy coffee shop interior with people",
+    "seed": 46,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 28.270488739013672,
+    "baseline_clip_score": 28.270488739013672,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a futuristic city with flying cars",
+    "seed": 47,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 33.290679931640625,
+    "baseline_clip_score": 33.290679931640625,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a watercolor painting of a flower garden",
+    "seed": 48,
+    "adaptive_steps": 22,
+    "baseline_steps": 30,
+    "speedup_percent": 26.666666666666668,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 34.86919403076172,
+    "baseline_clip_score": 34.86919403076172,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a professional headshot photograph",
+    "seed": 49,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 27.049869537353516,
+    "baseline_clip_score": 27.049869537353516,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a dramatic ocean wave crashing on rocks",
+    "seed": 50,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 31.72795867919922,
+    "baseline_clip_score": 31.72795867919922,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a steaming bowl of ramen noodles",
+    "seed": 51,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 29.11846351623535,
+    "baseline_clip_score": 29.11846351623535,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a geometric abstract art composition",
+    "seed": 52,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 29.024547576904297,
+    "baseline_clip_score": 29.024547576904297,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a cute puppy playing in grass",
+    "seed": 53,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 31.155580520629883,
+    "baseline_clip_score": 31.155580520629883,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a medieval castle on a misty hill",
+    "seed": 54,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 34.77658462524414,
+    "baseline_clip_score": 34.77658462524414,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a modern minimalist living room",
+    "seed": 55,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 30.696269989013672,
+    "baseline_clip_score": 30.696269989013672,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a busy Tokyo street at night with neon",
+    "seed": 56,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 32.343719482421875,
+    "baseline_clip_score": 32.343719482421875,
+    "clip_difference": 0.0
+  },
+  {
+    "prompt": "a detailed pencil sketch of a tree",
+    "seed": 57,
+    "adaptive_steps": 18,
+    "baseline_steps": 30,
+    "speedup_percent": 40.0,
+    "lpips_distance": 0.0,
+    "adaptive_clip_score": 34.75466537475586,
+    "baseline_clip_score": 34.75466537475586,
+    "clip_difference": 0.0
+  }
+]

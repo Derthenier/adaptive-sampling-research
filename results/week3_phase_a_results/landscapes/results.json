@@ -1,0 +1,262 @@
+[
+  {
+    "prompt": "a serene mountain landscape at sunset",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.292569160461426,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03365711122751236,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.04299847036600113,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.055596694350242615,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.0749121680855751,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.11171367764472961,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.16076815128326416,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.09463834762573242,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a tropical beach with palm trees and blue water",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.2822225093841553,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.02944905124604702,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.04045681655406952,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05188795179128647,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.0690726786851883,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.09576519578695297,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.10737139731645584,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.05842902511358261,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a misty forest with tall trees and morning light",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.2929654121398926,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.0332648828625679,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.04736983776092529,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.06556142121553421,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.09799270331859589,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.13865868747234344,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.16060727834701538,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.09300325810909271,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a desert landscape with sand dunes and clear sky",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.3029916286468506,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03621077910065651,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.045820433646440506,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.0648050457239151,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.09278981387615204,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.12446820735931396,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.14571286737918854,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.062165431678295135,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a snowy mountain peak under starry night sky",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.302823781967163,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.02865319326519966,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.038431525230407715,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05349702760577202,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.08420321345329285,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.13344189524650574,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.22381940484046936,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.17399877309799194,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  }
+]

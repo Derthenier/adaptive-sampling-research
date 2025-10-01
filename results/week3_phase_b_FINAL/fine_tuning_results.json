@@ -1,0 +1,203 @@
+{
+  "thresholds": [
+    0.035,
+    0.04,
+    0.045,
+    0.05,
+    0.055,
+    0.06
+  ],
+  "optimal": 0.04,
+  "results": {
+    "a portrait of a woman with red hair": [
+      {
+        "threshold": 0.035,
+        "stopped_step": null,
+        "actual_steps": 30,
+        "stopped_early": false
+      },
+      {
+        "threshold": 0.04,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.045,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.05,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.055,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.06,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      }
+    ],
+    "a mountain landscape at sunset": [
+      {
+        "threshold": 0.035,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.04,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.045,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.05,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.055,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.06,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      }
+    ],
+    "a coffee cup on a wooden table": [
+      {
+        "threshold": 0.035,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.04,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.045,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.05,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.055,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.06,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      }
+    ],
+    "a busy marketplace with people and stalls": [
+      {
+        "threshold": 0.035,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.04,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.045,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.05,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.055,
+        "stopped_step": 22,
+        "actual_steps": 22,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.06,
+        "stopped_step": 30,
+        "actual_steps": 30,
+        "stopped_early": true
+      }
+    ],
+    "swirling abstract colors": [
+      {
+        "threshold": 0.035,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.04,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.045,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.05,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.055,
+        "stopped_step": 18,
+        "actual_steps": 18,
+        "stopped_early": true
+      },
+      {
+        "threshold": 0.06,
+        "stopped_step": 30,
+        "actual_steps": 30,
+        "stopped_early": true
+      }
+    ]
+  }
+}

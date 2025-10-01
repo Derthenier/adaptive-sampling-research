@@ -1,0 +1,262 @@
+[
+  {
+    "prompt": "a portrait of a woman with red hair and green eyes",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.883361339569092,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.039345912635326385,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.05379053205251694,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.07642057538032532,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.10245868563652039,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.12753134965896606,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.14103445410728455,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.056656621396541595,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "an old man with a white beard, wise expression",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.309083938598633,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03046010062098503,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.0416586697101593,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05247148871421814,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.0729762613773346,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.09028063714504242,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.10474230349063873,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.05669005587697029,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a young child laughing, natural lighting",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.3248331546783447,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.033518724143505096,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.04624383524060249,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.057222530245780945,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.06491757929325104,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.07179997116327286,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.09186990559101105,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.051775991916656494,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a profile view of a person in silhouette",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.305366277694702,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.0355207584798336,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.04479526728391647,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.06142290681600571,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.10053478926420212,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.21457836031913757,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.36462146043777466,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.0897752121090889,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "headshot photo of a professional businesswoman",
+    "actual_steps": 30,
+    "max_steps": 30,
+    "stopped_early": false,
+    "generation_time": 2.306122064590454,
+    "speedup_percent": 0.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.0366375669836998,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.05049433186650276,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.07516609877347946,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.10475382953882217,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.13208255171775818,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.1486433446407318,
+        "threshold": 0.02,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.06686601787805557,
+        "threshold": 0.02,
+        "stopped": false
+      }
+    ]
+  }
+]

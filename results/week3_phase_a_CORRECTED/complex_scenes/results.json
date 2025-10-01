@@ -1,0 +1,262 @@
+[
+  {
+    "prompt": "a busy marketplace with many people and colorful stalls",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.3190910816192627,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.019890284165740013,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.07940039038658142,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.048144932836294174,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.06658551096916199,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.09159845113754272,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.10440439730882645,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.055741772055625916,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a cozy living room with furniture, plants, and decorations",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.274010181427002,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.028227660804986954,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.10209892690181732,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.05901133641600609,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.0845099613070488,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.12658783793449402,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.17277240753173828,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.10068682581186295,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a futuristic city street with cars and neon lights",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.3307173252105713,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.027476567775011063,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.10307028889656067,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.058220669627189636,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.08509188145399094,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.11931979656219482,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.15371958911418915,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.10460560768842697,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a medieval castle on a hill surrounded by villages",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.33612060546875,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.03018239513039589,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.10871835052967072,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.055735811591148376,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.08143569529056549,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.11115000396966934,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.14383211731910706,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.0843452662229538,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  },
+  {
+    "prompt": "a crowded train station with people and luggage",
+    "actual_steps": 18,
+    "max_steps": 30,
+    "stopped_early": true,
+    "generation_time": 2.2737081050872803,
+    "speedup_percent": 40.0,
+    "detection_log": [
+      {
+        "step": 18,
+        "lpips_change": 0.02138330042362213,
+        "threshold": 0.04,
+        "stopped": true
+      },
+      {
+        "step": 20,
+        "lpips_change": 0.08380776643753052,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 22,
+        "lpips_change": 0.048317134380340576,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 24,
+        "lpips_change": 0.06780791282653809,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 26,
+        "lpips_change": 0.09563405066728592,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 28,
+        "lpips_change": 0.12350402772426605,
+        "threshold": 0.04,
+        "stopped": false
+      },
+      {
+        "step": 30,
+        "lpips_change": 0.06742732971906662,
+        "threshold": 0.04,
+        "stopped": false
+      }
+    ]
+  }
+]
