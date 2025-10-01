@@ -3,8 +3,8 @@
 > **Research Project**: Making Stable Diffusion faster through content-aware adaptive sampling
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.8+-ee4c2c.svg)](https://pytorch.org/)
 
 ---
 
@@ -82,7 +82,7 @@ Output Image (Faster!)
 
 ```bash
 # Clone repository
-git clone https://github.com/[YOUR-USERNAME]/adaptive-sampling-research.git
+git clone https://github.com/Derthenier/adaptive-sampling-research.git
 cd adaptive-sampling-research
 
 # Install dependencies
