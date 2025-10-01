@@ -4,7 +4,7 @@
 **Week 2-3 Results:** ❌ Invalid (callback bug - no actual speedup)  
 **Week 4 Results:** ✅ Valid (proves method fails)  
 
-See FAILURE_ANALYSIS.md for details.
+See [FAILURE_ANALYSIS.md](FAILURE_ANALYSIS.md) for details.
 
 ---
 
