@@ -1,0 +1,1194 @@
+{
+  "prompt": "three cats and two dogs playing in a garden with flowers and butterflies",
+  "experiments": [
+    {
+      "steps": 10,
+      "generation_time": 0.7009170055389404,
+      "clip_score": 34.47560501098633,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 801,
+          "latent_mean": 0.01374053955078125,
+          "latent_std": 0.9912109375
+        },
+        {
+          "step": 2,
+          "timestep": 801,
+          "latent_mean": 0.025390625,
+          "latent_std": 0.97900390625
+        },
+        {
+          "step": 3,
+          "timestep": 701,
+          "latent_mean": 0.03558349609375,
+          "latent_std": 0.958984375
+        },
+        {
+          "step": 4,
+          "timestep": 601,
+          "latent_mean": 0.049713134765625,
+          "latent_std": 0.9365234375
+        },
+        {
+          "step": 5,
+          "timestep": 501,
+          "latent_mean": 0.06298828125,
+          "latent_std": 0.90673828125
+        },
+        {
+          "step": 6,
+          "timestep": 401,
+          "latent_mean": 0.07403564453125,
+          "latent_std": 0.8642578125
+        },
+        {
+          "step": 7,
+          "timestep": 301,
+          "latent_mean": 0.0845947265625,
+          "latent_std": 0.8310546875
+        },
+        {
+          "step": 8,
+          "timestep": 201,
+          "latent_mean": 0.0921630859375,
+          "latent_std": 0.80224609375
+        },
+        {
+          "step": 9,
+          "timestep": 101,
+          "latent_mean": 0.0980224609375,
+          "latent_std": 0.7978515625
+        },
+        {
+          "step": 10,
+          "timestep": 1,
+          "latent_mean": 0.0980224609375,
+          "latent_std": 0.794921875
+        }
+      ]
+    },
+    {
+      "steps": 15,
+      "generation_time": 1.2471263408660889,
+      "clip_score": 35.90949249267578,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 859,
+          "latent_mean": 0.0106658935546875,
+          "latent_std": 0.9931640625
+        },
+        {
+          "step": 2,
+          "timestep": 859,
+          "latent_mean": 0.0186614990234375,
+          "latent_std": 0.98779296875
+        },
+        {
+          "step": 3,
+          "timestep": 793,
+          "latent_mean": 0.02490234375,
+          "latent_std": 0.98388671875
+        },
+        {
+          "step": 4,
+          "timestep": 727,
+          "latent_mean": 0.034271240234375,
+          "latent_std": 0.966796875
+        },
+        {
+          "step": 5,
+          "timestep": 661,
+          "latent_mean": 0.04638671875,
+          "latent_std": 0.96240234375
+        },
+        {
+          "step": 6,
+          "timestep": 595,
+          "latent_mean": 0.053131103515625,
+          "latent_std": 0.9453125
+        },
+        {
+          "step": 7,
+          "timestep": 529,
+          "latent_mean": 0.0660400390625,
+          "latent_std": 0.919921875
+        },
+        {
+          "step": 8,
+          "timestep": 463,
+          "latent_mean": 0.07470703125,
+          "latent_std": 0.90087890625
+        },
+        {
+          "step": 9,
+          "timestep": 397,
+          "latent_mean": 0.0841064453125,
+          "latent_std": 0.87109375
+        },
+        {
+          "step": 10,
+          "timestep": 331,
+          "latent_mean": 0.093017578125,
+          "latent_std": 0.84375
+        },
+        {
+          "step": 11,
+          "timestep": 265,
+          "latent_mean": 0.1004638671875,
+          "latent_std": 0.8193359375
+        },
+        {
+          "step": 12,
+          "timestep": 199,
+          "latent_mean": 0.10687255859375,
+          "latent_std": 0.791015625
+        },
+        {
+          "step": 13,
+          "timestep": 133,
+          "latent_mean": 0.1119384765625,
+          "latent_std": 0.7724609375
+        },
+        {
+          "step": 14,
+          "timestep": 67,
+          "latent_mean": 0.11602783203125,
+          "latent_std": 0.751953125
+        },
+        {
+          "step": 15,
+          "timestep": 1,
+          "latent_mean": 0.1160888671875,
+          "latent_std": 0.75244140625
+        }
+      ]
+    },
+    {
+      "steps": 20,
+      "generation_time": 1.7370827198028564,
+      "clip_score": 34.7811279296875,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 901,
+          "latent_mean": 0.00901031494140625,
+          "latent_std": 0.99462890625
+        },
+        {
+          "step": 2,
+          "timestep": 901,
+          "latent_mean": 0.01544189453125,
+          "latent_std": 0.99169921875
+        },
+        {
+          "step": 3,
+          "timestep": 851,
+          "latent_mean": 0.0201416015625,
+          "latent_std": 0.98828125
+        },
+        {
+          "step": 4,
+          "timestep": 801,
+          "latent_mean": 0.0276947021484375,
+          "latent_std": 0.98388671875
+        },
+        {
+          "step": 5,
+          "timestep": 751,
+          "latent_mean": 0.03302001953125,
+          "latent_std": 0.9765625
+        },
+        {
+          "step": 6,
+          "timestep": 701,
+          "latent_mean": 0.040985107421875,
+          "latent_std": 0.97265625
+        },
+        {
+          "step": 7,
+          "timestep": 651,
+          "latent_mean": 0.04833984375,
+          "latent_std": 0.95947265625
+        },
+        {
+          "step": 8,
+          "timestep": 601,
+          "latent_mean": 0.058074951171875,
+          "latent_std": 0.95166015625
+        },
+        {
+          "step": 9,
+          "timestep": 551,
+          "latent_mean": 0.0645751953125,
+          "latent_std": 0.93896484375
+        },
+        {
+          "step": 10,
+          "timestep": 501,
+          "latent_mean": 0.0736083984375,
+          "latent_std": 0.919921875
+        },
+        {
+          "step": 11,
+          "timestep": 451,
+          "latent_mean": 0.0816650390625,
+          "latent_std": 0.9052734375
+        },
+        {
+          "step": 12,
+          "timestep": 401,
+          "latent_mean": 0.089111328125,
+          "latent_std": 0.8837890625
+        },
+        {
+          "step": 13,
+          "timestep": 351,
+          "latent_mean": 0.09674072265625,
+          "latent_std": 0.8662109375
+        },
+        {
+          "step": 14,
+          "timestep": 301,
+          "latent_mean": 0.1033935546875,
+          "latent_std": 0.84521484375
+        },
+        {
+          "step": 15,
+          "timestep": 251,
+          "latent_mean": 0.10955810546875,
+          "latent_std": 0.8271484375
+        },
+        {
+          "step": 16,
+          "timestep": 201,
+          "latent_mean": 0.11505126953125,
+          "latent_std": 0.80859375
+        },
+        {
+          "step": 17,
+          "timestep": 151,
+          "latent_mean": 0.1197509765625,
+          "latent_std": 0.7919921875
+        },
+        {
+          "step": 18,
+          "timestep": 101,
+          "latent_mean": 0.1236572265625,
+          "latent_std": 0.7763671875
+        },
+        {
+          "step": 19,
+          "timestep": 51,
+          "latent_mean": 0.126953125,
+          "latent_std": 0.76171875
+        },
+        {
+          "step": 20,
+          "timestep": 1,
+          "latent_mean": 0.126953125,
+          "latent_std": 0.7626953125
+        }
+      ]
+    },
+    {
+      "steps": 25,
+      "generation_time": 2.08893084526062,
+      "clip_score": 34.27777099609375,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 921,
+          "latent_mean": 0.007904052734375,
+          "latent_std": 0.9951171875
+        },
+        {
+          "step": 2,
+          "timestep": 921,
+          "latent_mean": 0.0129241943359375,
+          "latent_std": 0.9931640625
+        },
+        {
+          "step": 3,
+          "timestep": 881,
+          "latent_mean": 0.0168914794921875,
+          "latent_std": 0.990234375
+        },
+        {
+          "step": 4,
+          "timestep": 841,
+          "latent_mean": 0.0219573974609375,
+          "latent_std": 0.98828125
+        },
+        {
+          "step": 5,
+          "timestep": 801,
+          "latent_mean": 0.0270538330078125,
+          "latent_std": 0.98486328125
+        },
+        {
+          "step": 6,
+          "timestep": 761,
+          "latent_mean": 0.032135009765625,
+          "latent_std": 0.97998046875
+        },
+        {
+          "step": 7,
+          "timestep": 721,
+          "latent_mean": 0.037353515625,
+          "latent_std": 0.9736328125
+        },
+        {
+          "step": 8,
+          "timestep": 681,
+          "latent_mean": 0.043670654296875,
+          "latent_std": 0.9697265625
+        },
+        {
+          "step": 9,
+          "timestep": 641,
+          "latent_mean": 0.05010986328125,
+          "latent_std": 0.958984375
+        },
+        {
+          "step": 10,
+          "timestep": 601,
+          "latent_mean": 0.056976318359375,
+          "latent_std": 0.9541015625
+        },
+        {
+          "step": 11,
+          "timestep": 561,
+          "latent_mean": 0.06353759765625,
+          "latent_std": 0.943359375
+        },
+        {
+          "step": 12,
+          "timestep": 521,
+          "latent_mean": 0.0701904296875,
+          "latent_std": 0.9296875
+        },
+        {
+          "step": 13,
+          "timestep": 481,
+          "latent_mean": 0.07720947265625,
+          "latent_std": 0.91943359375
+        },
+        {
+          "step": 14,
+          "timestep": 441,
+          "latent_mean": 0.08367919921875,
+          "latent_std": 0.90234375
+        },
+        {
+          "step": 15,
+          "timestep": 401,
+          "latent_mean": 0.09027099609375,
+          "latent_std": 0.88916015625
+        },
+        {
+          "step": 16,
+          "timestep": 361,
+          "latent_mean": 0.0963134765625,
+          "latent_std": 0.87255859375
+        },
+        {
+          "step": 17,
+          "timestep": 321,
+          "latent_mean": 0.102294921875,
+          "latent_std": 0.857421875
+        },
+        {
+          "step": 18,
+          "timestep": 281,
+          "latent_mean": 0.107666015625,
+          "latent_std": 0.8408203125
+        },
+        {
+          "step": 19,
+          "timestep": 241,
+          "latent_mean": 0.1126708984375,
+          "latent_std": 0.82568359375
+        },
+        {
+          "step": 20,
+          "timestep": 201,
+          "latent_mean": 0.1171875,
+          "latent_std": 0.810546875
+        },
+        {
+          "step": 21,
+          "timestep": 161,
+          "latent_mean": 0.12127685546875,
+          "latent_std": 0.79638671875
+        },
+        {
+          "step": 22,
+          "timestep": 121,
+          "latent_mean": 0.12481689453125,
+          "latent_std": 0.783203125
+        },
+        {
+          "step": 23,
+          "timestep": 81,
+          "latent_mean": 0.127685546875,
+          "latent_std": 0.77099609375
+        },
+        {
+          "step": 24,
+          "timestep": 41,
+          "latent_mean": 0.1304931640625,
+          "latent_std": 0.75634765625
+        },
+        {
+          "step": 25,
+          "timestep": 1,
+          "latent_mean": 0.130615234375,
+          "latent_std": 0.75732421875
+        }
+      ]
+    },
+    {
+      "steps": 30,
+      "generation_time": 2.0905473232269287,
+      "clip_score": 33.628116607666016,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 925,
+          "latent_mean": 0.007114410400390625,
+          "latent_std": 0.99560546875
+        },
+        {
+          "step": 2,
+          "timestep": 925,
+          "latent_mean": 0.01149749755859375,
+          "latent_std": 0.99365234375
+        },
+        {
+          "step": 3,
+          "timestep": 892,
+          "latent_mean": 0.01483154296875,
+          "latent_std": 0.99169921875
+        },
+        {
+          "step": 4,
+          "timestep": 859,
+          "latent_mean": 0.0189208984375,
+          "latent_std": 0.9892578125
+        },
+        {
+          "step": 5,
+          "timestep": 826,
+          "latent_mean": 0.022735595703125,
+          "latent_std": 0.9873046875
+        },
+        {
+          "step": 6,
+          "timestep": 793,
+          "latent_mean": 0.02703857421875,
+          "latent_std": 0.98486328125
+        },
+        {
+          "step": 7,
+          "timestep": 760,
+          "latent_mean": 0.031097412109375,
+          "latent_std": 0.98046875
+        },
+        {
+          "step": 8,
+          "timestep": 727,
+          "latent_mean": 0.0355224609375,
+          "latent_std": 0.9765625
+        },
+        {
+          "step": 9,
+          "timestep": 694,
+          "latent_mean": 0.040130615234375,
+          "latent_std": 0.970703125
+        },
+        {
+          "step": 10,
+          "timestep": 661,
+          "latent_mean": 0.045013427734375,
+          "latent_std": 0.96484375
+        },
+        {
+          "step": 11,
+          "timestep": 628,
+          "latent_mean": 0.050140380859375,
+          "latent_std": 0.95703125
+        },
+        {
+          "step": 12,
+          "timestep": 595,
+          "latent_mean": 0.05535888671875,
+          "latent_std": 0.95068359375
+        },
+        {
+          "step": 13,
+          "timestep": 562,
+          "latent_mean": 0.060699462890625,
+          "latent_std": 0.94091796875
+        },
+        {
+          "step": 14,
+          "timestep": 529,
+          "latent_mean": 0.0660400390625,
+          "latent_std": 0.931640625
+        },
+        {
+          "step": 15,
+          "timestep": 496,
+          "latent_mean": 0.07171630859375,
+          "latent_std": 0.92138671875
+        },
+        {
+          "step": 16,
+          "timestep": 463,
+          "latent_mean": 0.07696533203125,
+          "latent_std": 0.9091796875
+        },
+        {
+          "step": 17,
+          "timestep": 430,
+          "latent_mean": 0.0823974609375,
+          "latent_std": 0.89794921875
+        },
+        {
+          "step": 18,
+          "timestep": 397,
+          "latent_mean": 0.08740234375,
+          "latent_std": 0.8837890625
+        },
+        {
+          "step": 19,
+          "timestep": 364,
+          "latent_mean": 0.0924072265625,
+          "latent_std": 0.87060546875
+        },
+        {
+          "step": 20,
+          "timestep": 331,
+          "latent_mean": 0.09716796875,
+          "latent_std": 0.8564453125
+        },
+        {
+          "step": 21,
+          "timestep": 298,
+          "latent_mean": 0.1016845703125,
+          "latent_std": 0.8427734375
+        },
+        {
+          "step": 22,
+          "timestep": 265,
+          "latent_mean": 0.10595703125,
+          "latent_std": 0.82861328125
+        },
+        {
+          "step": 23,
+          "timestep": 232,
+          "latent_mean": 0.10980224609375,
+          "latent_std": 0.81494140625
+        },
+        {
+          "step": 24,
+          "timestep": 199,
+          "latent_mean": 0.11346435546875,
+          "latent_std": 0.8017578125
+        },
+        {
+          "step": 25,
+          "timestep": 166,
+          "latent_mean": 0.11676025390625,
+          "latent_std": 0.7890625
+        },
+        {
+          "step": 26,
+          "timestep": 133,
+          "latent_mean": 0.11968994140625,
+          "latent_std": 0.77734375
+        },
+        {
+          "step": 27,
+          "timestep": 100,
+          "latent_mean": 0.122314453125,
+          "latent_std": 0.7666015625
+        },
+        {
+          "step": 28,
+          "timestep": 67,
+          "latent_mean": 0.12457275390625,
+          "latent_std": 0.75634765625
+        },
+        {
+          "step": 29,
+          "timestep": 34,
+          "latent_mean": 0.1265869140625,
+          "latent_std": 0.74462890625
+        },
+        {
+          "step": 30,
+          "timestep": 1,
+          "latent_mean": 0.126708984375,
+          "latent_std": 0.74609375
+        }
+      ]
+    },
+    {
+      "steps": 40,
+      "generation_time": 2.5435354709625244,
+      "clip_score": 32.89237976074219,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 951,
+          "latent_mean": 0.006137847900390625,
+          "latent_std": 0.99609375
+        },
+        {
+          "step": 2,
+          "timestep": 951,
+          "latent_mean": 0.009368896484375,
+          "latent_std": 0.99462890625
+        },
+        {
+          "step": 3,
+          "timestep": 926,
+          "latent_mean": 0.01216888427734375,
+          "latent_std": 0.99365234375
+        },
+        {
+          "step": 4,
+          "timestep": 901,
+          "latent_mean": 0.01494598388671875,
+          "latent_std": 0.9921875
+        },
+        {
+          "step": 5,
+          "timestep": 876,
+          "latent_mean": 0.0178070068359375,
+          "latent_std": 0.99072265625
+        },
+        {
+          "step": 6,
+          "timestep": 851,
+          "latent_mean": 0.0206298828125,
+          "latent_std": 0.9892578125
+        },
+        {
+          "step": 7,
+          "timestep": 826,
+          "latent_mean": 0.0236968994140625,
+          "latent_std": 0.9873046875
+        },
+        {
+          "step": 8,
+          "timestep": 801,
+          "latent_mean": 0.02685546875,
+          "latent_std": 0.98583984375
+        },
+        {
+          "step": 9,
+          "timestep": 776,
+          "latent_mean": 0.030120849609375,
+          "latent_std": 0.9833984375
+        },
+        {
+          "step": 10,
+          "timestep": 751,
+          "latent_mean": 0.033538818359375,
+          "latent_std": 0.98046875
+        },
+        {
+          "step": 11,
+          "timestep": 726,
+          "latent_mean": 0.036956787109375,
+          "latent_std": 0.97705078125
+        },
+        {
+          "step": 12,
+          "timestep": 701,
+          "latent_mean": 0.04071044921875,
+          "latent_std": 0.9736328125
+        },
+        {
+          "step": 13,
+          "timestep": 676,
+          "latent_mean": 0.04425048828125,
+          "latent_std": 0.9677734375
+        },
+        {
+          "step": 14,
+          "timestep": 651,
+          "latent_mean": 0.048553466796875,
+          "latent_std": 0.96533203125
+        },
+        {
+          "step": 15,
+          "timestep": 626,
+          "latent_mean": 0.05230712890625,
+          "latent_std": 0.9580078125
+        },
+        {
+          "step": 16,
+          "timestep": 601,
+          "latent_mean": 0.0570068359375,
+          "latent_std": 0.955078125
+        },
+        {
+          "step": 17,
+          "timestep": 576,
+          "latent_mean": 0.060943603515625,
+          "latent_std": 0.94677734375
+        },
+        {
+          "step": 18,
+          "timestep": 551,
+          "latent_mean": 0.06549072265625,
+          "latent_std": 0.94140625
+        },
+        {
+          "step": 19,
+          "timestep": 526,
+          "latent_mean": 0.06982421875,
+          "latent_std": 0.93408203125
+        },
+        {
+          "step": 20,
+          "timestep": 501,
+          "latent_mean": 0.07427978515625,
+          "latent_std": 0.92578125
+        },
+        {
+          "step": 21,
+          "timestep": 476,
+          "latent_mean": 0.0787353515625,
+          "latent_std": 0.91796875
+        },
+        {
+          "step": 22,
+          "timestep": 451,
+          "latent_mean": 0.08306884765625,
+          "latent_std": 0.9091796875
+        },
+        {
+          "step": 23,
+          "timestep": 426,
+          "latent_mean": 0.08746337890625,
+          "latent_std": 0.900390625
+        },
+        {
+          "step": 24,
+          "timestep": 401,
+          "latent_mean": 0.0916748046875,
+          "latent_std": 0.89013671875
+        },
+        {
+          "step": 25,
+          "timestep": 376,
+          "latent_mean": 0.09588623046875,
+          "latent_std": 0.880859375
+        },
+        {
+          "step": 26,
+          "timestep": 351,
+          "latent_mean": 0.099853515625,
+          "latent_std": 0.87060546875
+        },
+        {
+          "step": 27,
+          "timestep": 326,
+          "latent_mean": 0.10369873046875,
+          "latent_std": 0.8603515625
+        },
+        {
+          "step": 28,
+          "timestep": 301,
+          "latent_mean": 0.1075439453125,
+          "latent_std": 0.85009765625
+        },
+        {
+          "step": 29,
+          "timestep": 276,
+          "latent_mean": 0.1109619140625,
+          "latent_std": 0.83984375
+        },
+        {
+          "step": 30,
+          "timestep": 251,
+          "latent_mean": 0.114501953125,
+          "latent_std": 0.830078125
+        },
+        {
+          "step": 31,
+          "timestep": 226,
+          "latent_mean": 0.1175537109375,
+          "latent_std": 0.81982421875
+        },
+        {
+          "step": 32,
+          "timestep": 201,
+          "latent_mean": 0.12060546875,
+          "latent_std": 0.81005859375
+        },
+        {
+          "step": 33,
+          "timestep": 176,
+          "latent_mean": 0.1234130859375,
+          "latent_std": 0.80078125
+        },
+        {
+          "step": 34,
+          "timestep": 151,
+          "latent_mean": 0.1259765625,
+          "latent_std": 0.79150390625
+        },
+        {
+          "step": 35,
+          "timestep": 126,
+          "latent_mean": 0.1282958984375,
+          "latent_std": 0.78271484375
+        },
+        {
+          "step": 36,
+          "timestep": 101,
+          "latent_mean": 0.1304931640625,
+          "latent_std": 0.7744140625
+        },
+        {
+          "step": 37,
+          "timestep": 76,
+          "latent_mean": 0.132568359375,
+          "latent_std": 0.7666015625
+        },
+        {
+          "step": 38,
+          "timestep": 51,
+          "latent_mean": 0.1341552734375,
+          "latent_std": 0.75927734375
+        },
+        {
+          "step": 39,
+          "timestep": 26,
+          "latent_mean": 0.1358642578125,
+          "latent_std": 0.75048828125
+        },
+        {
+          "step": 40,
+          "timestep": 1,
+          "latent_mean": 0.135986328125,
+          "latent_std": 0.751953125
+        }
+      ]
+    },
+    {
+      "steps": 50,
+      "generation_time": 3.0718419551849365,
+      "clip_score": 33.3974494934082,
+      "trajectory": [
+        {
+          "step": 1,
+          "timestep": 961,
+          "latent_mean": 0.00547027587890625,
+          "latent_std": 0.99609375
+        },
+        {
+          "step": 2,
+          "timestep": 961,
+          "latent_mean": 0.00800323486328125,
+          "latent_std": 0.9951171875
+        },
+        {
+          "step": 3,
+          "timestep": 941,
+          "latent_mean": 0.01035308837890625,
+          "latent_std": 0.99462890625
+        },
+        {
+          "step": 4,
+          "timestep": 921,
+          "latent_mean": 0.01256561279296875,
+          "latent_std": 0.9931640625
+        },
+        {
+          "step": 5,
+          "timestep": 901,
+          "latent_mean": 0.0147247314453125,
+          "latent_std": 0.9921875
+        },
+        {
+          "step": 6,
+          "timestep": 881,
+          "latent_mean": 0.0170135498046875,
+          "latent_std": 0.9912109375
+        },
+        {
+          "step": 7,
+          "timestep": 861,
+          "latent_mean": 0.019195556640625,
+          "latent_std": 0.990234375
+        },
+        {
+          "step": 8,
+          "timestep": 841,
+          "latent_mean": 0.0215606689453125,
+          "latent_std": 0.98876953125
+        },
+        {
+          "step": 9,
+          "timestep": 821,
+          "latent_mean": 0.02398681640625,
+          "latent_std": 0.98779296875
+        },
+        {
+          "step": 10,
+          "timestep": 801,
+          "latent_mean": 0.0265655517578125,
+          "latent_std": 0.986328125
+        },
+        {
+          "step": 11,
+          "timestep": 781,
+          "latent_mean": 0.0291290283203125,
+          "latent_std": 0.984375
+        },
+        {
+          "step": 12,
+          "timestep": 761,
+          "latent_mean": 0.0318603515625,
+          "latent_std": 0.982421875
+        },
+        {
+          "step": 13,
+          "timestep": 741,
+          "latent_mean": 0.034637451171875,
+          "latent_std": 0.97998046875
+        },
+        {
+          "step": 14,
+          "timestep": 721,
+          "latent_mean": 0.037445068359375,
+          "latent_std": 0.9775390625
+        },
+        {
+          "step": 15,
+          "timestep": 701,
+          "latent_mean": 0.0404052734375,
+          "latent_std": 0.97412109375
+        },
+        {
+          "step": 16,
+          "timestep": 681,
+          "latent_mean": 0.043426513671875,
+          "latent_std": 0.970703125
+        },
+        {
+          "step": 17,
+          "timestep": 661,
+          "latent_mean": 0.0465087890625,
+          "latent_std": 0.966796875
+        },
+        {
+          "step": 18,
+          "timestep": 641,
+          "latent_mean": 0.049957275390625,
+          "latent_std": 0.96337890625
+        },
+        {
+          "step": 19,
+          "timestep": 621,
+          "latent_mean": 0.053009033203125,
+          "latent_std": 0.9580078125
+        },
+        {
+          "step": 20,
+          "timestep": 601,
+          "latent_mean": 0.056610107421875,
+          "latent_std": 0.95458984375
+        },
+        {
+          "step": 21,
+          "timestep": 581,
+          "latent_mean": 0.059814453125,
+          "latent_std": 0.94921875
+        },
+        {
+          "step": 22,
+          "timestep": 561,
+          "latent_mean": 0.06329345703125,
+          "latent_std": 0.9443359375
+        },
+        {
+          "step": 23,
+          "timestep": 541,
+          "latent_mean": 0.06683349609375,
+          "latent_std": 0.93896484375
+        },
+        {
+          "step": 24,
+          "timestep": 521,
+          "latent_mean": 0.0703125,
+          "latent_std": 0.9326171875
+        },
+        {
+          "step": 25,
+          "timestep": 501,
+          "latent_mean": 0.07391357421875,
+          "latent_std": 0.92724609375
+        },
+        {
+          "step": 26,
+          "timestep": 481,
+          "latent_mean": 0.07745361328125,
+          "latent_std": 0.92041015625
+        },
+        {
+          "step": 27,
+          "timestep": 461,
+          "latent_mean": 0.08099365234375,
+          "latent_std": 0.9140625
+        },
+        {
+          "step": 28,
+          "timestep": 441,
+          "latent_mean": 0.08453369140625,
+          "latent_std": 0.90673828125
+        },
+        {
+          "step": 29,
+          "timestep": 421,
+          "latent_mean": 0.08795166015625,
+          "latent_std": 0.8994140625
+        },
+        {
+          "step": 30,
+          "timestep": 401,
+          "latent_mean": 0.09136962890625,
+          "latent_std": 0.89208984375
+        },
+        {
+          "step": 31,
+          "timestep": 381,
+          "latent_mean": 0.0947265625,
+          "latent_std": 0.8837890625
+        },
+        {
+          "step": 32,
+          "timestep": 361,
+          "latent_mean": 0.097900390625,
+          "latent_std": 0.8759765625
+        },
+        {
+          "step": 33,
+          "timestep": 341,
+          "latent_mean": 0.10113525390625,
+          "latent_std": 0.86767578125
+        },
+        {
+          "step": 34,
+          "timestep": 321,
+          "latent_mean": 0.104248046875,
+          "latent_std": 0.859375
+        },
+        {
+          "step": 35,
+          "timestep": 301,
+          "latent_mean": 0.10723876953125,
+          "latent_std": 0.85107421875
+        },
+        {
+          "step": 36,
+          "timestep": 281,
+          "latent_mean": 0.11004638671875,
+          "latent_std": 0.8427734375
+        },
+        {
+          "step": 37,
+          "timestep": 261,
+          "latent_mean": 0.1129150390625,
+          "latent_std": 0.83447265625
+        },
+        {
+          "step": 38,
+          "timestep": 241,
+          "latent_mean": 0.11553955078125,
+          "latent_std": 0.82666015625
+        },
+        {
+          "step": 39,
+          "timestep": 221,
+          "latent_mean": 0.11810302734375,
+          "latent_std": 0.818359375
+        },
+        {
+          "step": 40,
+          "timestep": 201,
+          "latent_mean": 0.12054443359375,
+          "latent_std": 0.810546875
+        },
+        {
+          "step": 41,
+          "timestep": 181,
+          "latent_mean": 0.122802734375,
+          "latent_std": 0.802734375
+        },
+        {
+          "step": 42,
+          "timestep": 161,
+          "latent_mean": 0.12493896484375,
+          "latent_std": 0.79541015625
+        },
+        {
+          "step": 43,
+          "timestep": 141,
+          "latent_mean": 0.126953125,
+          "latent_std": 0.7880859375
+        },
+        {
+          "step": 44,
+          "timestep": 121,
+          "latent_mean": 0.1287841796875,
+          "latent_std": 0.78076171875
+        },
+        {
+          "step": 45,
+          "timestep": 101,
+          "latent_mean": 0.130615234375,
+          "latent_std": 0.77392578125
+        },
+        {
+          "step": 46,
+          "timestep": 81,
+          "latent_mean": 0.1322021484375,
+          "latent_std": 0.767578125
+        },
+        {
+          "step": 47,
+          "timestep": 61,
+          "latent_mean": 0.1337890625,
+          "latent_std": 0.76171875
+        },
+        {
+          "step": 48,
+          "timestep": 41,
+          "latent_mean": 0.135009765625,
+          "latent_std": 0.755859375
+        },
+        {
+          "step": 49,
+          "timestep": 21,
+          "latent_mean": 0.136474609375,
+          "latent_std": 0.7490234375
+        },
+        {
+          "step": 50,
+          "timestep": 1,
+          "latent_mean": 0.1365966796875,
+          "latent_std": 0.75
+        }
+      ]
+    }
+  ]
+}

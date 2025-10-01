@@ -76,6 +76,22 @@ Output Image (Faster!)
 
 ---
 
+## Results
+
+### 🔬 Week 1 Results (Baseline Analysis)
+
+**Hardware**: RTX 5070 Ti 16GB
+**Baseline**: 2.39s for 512x512 @ 30 steps
+
+### Key Findings:
+- Simple prompts: X steps sufficient
+- Complex prompts: Y steps needed
+- Potential speedup: Z%
+
+[See detailed results →](week1_results/)
+
+---
+
 ## 🚀 Quick Start
 
 ### Installation
