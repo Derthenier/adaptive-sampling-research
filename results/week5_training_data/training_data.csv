@@ -1,0 +1,26 @@
+prompt,seed,optimal_steps,optimal_lpips
+a red apple on a white table,42,20,0.02062121219933033
+a blue coffee mug,43,20,0.08241825550794601
+a yellow banana,44,20,0.08196904510259628
+a vintage camera,45,30,0.0
+a leather-bound book,46,20,0.030563995242118835
+a portrait of a woman with curly hair,47,18,0.09633442759513855
+a professional headshot of a businessman,48,18,0.07984673976898193
+an elderly man with a beard,49,30,0.0
+a child laughing in sunlight,50,30,0.0
+a portrait of a person wearing glasses,51,25,0.06022420898079872
+a serene mountain landscape at sunset,52,20,0.03886696696281433
+a tropical beach with palm trees,53,15,0.09336503595113754
+a misty forest in autumn,54,20,0.032169148325920105
+a desert with sand dunes,55,15,0.06906864047050476
+a snowy mountain peak,56,18,0.06406746804714203
+a bustling marketplace with people shopping,57,20,0.09977495670318604
+a cozy coffee shop interior with customers,58,20,0.08941890299320221
+a futuristic cyberpunk city at night,59,20,0.08511960506439209
+a medieval castle on a cliff,60,20,0.03257118538022041
+a busy Tokyo street with neon signs,61,20,0.07811300456523895
+abstract geometric shapes in vibrant colors,62,30,0.0
+swirling colors in a dreamlike composition,63,15,0.0704660564661026
+minimalist abstract art with lines,64,25,0.025157062336802483
+colorful watercolor splashes,65,25,0.029809270054101944
+geometric patterns in pastel tones,66,30,0.0

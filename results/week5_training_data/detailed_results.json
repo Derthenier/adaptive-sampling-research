@@ -1,0 +1,952 @@
+[
+  {
+    "prompt": "a red apple on a white table",
+    "seed": 42,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.3032400906085968,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.2843281030654907,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.02062121219933033,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.03953329846262932,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.00591746112331748,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.02062121219933033
+  },
+  {
+    "prompt": "a blue coffee mug",
+    "seed": 43,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.17479361593723297,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.13426703214645386,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.08241825550794601,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.07968857884407043,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.013031983748078346,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.08241825550794601
+  },
+  {
+    "prompt": "a yellow banana",
+    "seed": 44,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.15632747113704681,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.18832604587078094,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.08196904510259628,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.047122109681367874,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.0435774102807045,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.08196904510259628
+  },
+  {
+    "prompt": "a vintage camera",
+    "seed": 45,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.3234802782535553,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.285780131816864,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.2177468091249466,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.14651930332183838,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.15699204802513123,
+        "meets_threshold": false
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 30,
+    "optimal_lpips": 0.0
+  },
+  {
+    "prompt": "a leather-bound book",
+    "seed": 46,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.16514745354652405,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.11918316781520844,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.030563995242118835,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.06605932861566544,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.08783785998821259,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.030563995242118835
+  },
+  {
+    "prompt": "a portrait of a woman with curly hair",
+    "seed": 47,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.2525498867034912,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.09633442759513855,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.05325709283351898,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.08002036064863205,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.06947824358940125,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 18,
+    "optimal_lpips": 0.09633442759513855
+  },
+  {
+    "prompt": "a professional headshot of a businessman",
+    "seed": 48,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.12695707380771637,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.07984673976898193,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.05425862595438957,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.05967229604721069,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.015620827674865723,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 18,
+    "optimal_lpips": 0.07984673976898193
+  },
+  {
+    "prompt": "an elderly man with a beard",
+    "seed": 49,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.2622673511505127,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.23617607355117798,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.18132144212722778,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.1079140305519104,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.10305389761924744,
+        "meets_threshold": false
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 30,
+    "optimal_lpips": 0.0
+  },
+  {
+    "prompt": "a child laughing in sunlight",
+    "seed": 50,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.717995285987854,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.638013482093811,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.4639419913291931,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.5126957297325134,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.21193745732307434,
+        "meets_threshold": false
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 30,
+    "optimal_lpips": 0.0
+  },
+  {
+    "prompt": "a portrait of a person wearing glasses",
+    "seed": 51,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.2821965217590332,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.2566455006599426,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.2302619218826294,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.21605509519577026,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.06022420898079872,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 25,
+    "optimal_lpips": 0.06022420898079872
+  },
+  {
+    "prompt": "a serene mountain landscape at sunset",
+    "seed": 52,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.41103965044021606,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.19472379982471466,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.03886696696281433,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.04197705164551735,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.03175878897309303,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.03886696696281433
+  },
+  {
+    "prompt": "a tropical beach with palm trees",
+    "seed": 53,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.09336503595113754,
+        "meets_threshold": true
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.04162637144327164,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.05118484050035477,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.037383243441581726,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.0429140105843544,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 15,
+    "optimal_lpips": 0.09336503595113754
+  },
+  {
+    "prompt": "a misty forest in autumn",
+    "seed": 54,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.16245724260807037,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.1117478683590889,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.032169148325920105,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.09104112535715103,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.010487133637070656,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.032169148325920105
+  },
+  {
+    "prompt": "a desert with sand dunes",
+    "seed": 55,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.06906864047050476,
+        "meets_threshold": true
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.048634305596351624,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.01630266197025776,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.01645980216562748,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.0046968101523816586,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 15,
+    "optimal_lpips": 0.06906864047050476
+  },
+  {
+    "prompt": "a snowy mountain peak",
+    "seed": 56,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.1264224350452423,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.06406746804714203,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.02929736115038395,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.026191242039203644,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.008719250559806824,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 18,
+    "optimal_lpips": 0.06406746804714203
+  },
+  {
+    "prompt": "a bustling marketplace with people shopping",
+    "seed": 57,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.28002360463142395,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.17433103919029236,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.09977495670318604,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.07559309899806976,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.015317702665925026,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.09977495670318604
+  },
+  {
+    "prompt": "a cozy coffee shop interior with customers",
+    "seed": 58,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.17502087354660034,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.14038865268230438,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.08941890299320221,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.06127689406275749,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.017891885712742805,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.08941890299320221
+  },
+  {
+    "prompt": "a futuristic cyberpunk city at night",
+    "seed": 59,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.19801753759384155,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.17333319783210754,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.08511960506439209,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.1482294797897339,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.024949505925178528,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.08511960506439209
+  },
+  {
+    "prompt": "a medieval castle on a cliff",
+    "seed": 60,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.2300383597612381,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.19541779160499573,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.03257118538022041,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.06289191544055939,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.025169940665364265,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.03257118538022041
+  },
+  {
+    "prompt": "a busy Tokyo street with neon signs",
+    "seed": 61,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.14854653179645538,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.1288813054561615,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.07811300456523895,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.06811270862817764,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.051401473581790924,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 20,
+    "optimal_lpips": 0.07811300456523895
+  },
+  {
+    "prompt": "abstract geometric shapes in vibrant colors",
+    "seed": 62,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.4003443121910095,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.2978493273258209,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.31036990880966187,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.30153128504753113,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.2058844268321991,
+        "meets_threshold": false
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 30,
+    "optimal_lpips": 0.0
+  },
+  {
+    "prompt": "swirling colors in a dreamlike composition",
+    "seed": 63,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.0704660564661026,
+        "meets_threshold": true
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.05811343714594841,
+        "meets_threshold": true
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.03825490176677704,
+        "meets_threshold": true
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.029875189065933228,
+        "meets_threshold": true
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.03390999883413315,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 15,
+    "optimal_lpips": 0.0704660564661026
+  },
+  {
+    "prompt": "minimalist abstract art with lines",
+    "seed": 64,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.46673789620399475,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.3286094069480896,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.11651403456926346,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.11824540793895721,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.025157062336802483,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 25,
+    "optimal_lpips": 0.025157062336802483
+  },
+  {
+    "prompt": "colorful watercolor splashes",
+    "seed": 65,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.28473687171936035,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.23995496332645416,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.11710333079099655,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.12198548018932343,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.029809270054101944,
+        "meets_threshold": true
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 25,
+    "optimal_lpips": 0.029809270054101944
+  },
+  {
+    "prompt": "geometric patterns in pastel tones",
+    "seed": 66,
+    "step_results": [
+      {
+        "steps": 15,
+        "lpips_distance": 0.17377421259880066,
+        "meets_threshold": false
+      },
+      {
+        "steps": 18,
+        "lpips_distance": 0.17206385731697083,
+        "meets_threshold": false
+      },
+      {
+        "steps": 20,
+        "lpips_distance": 0.17129245400428772,
+        "meets_threshold": false
+      },
+      {
+        "steps": 22,
+        "lpips_distance": 0.14085303246974945,
+        "meets_threshold": false
+      },
+      {
+        "steps": 25,
+        "lpips_distance": 0.2154618799686432,
+        "meets_threshold": false
+      },
+      {
+        "steps": 30,
+        "lpips_distance": 0.0,
+        "meets_threshold": true
+      }
+    ],
+    "optimal_steps": 30,
+    "optimal_lpips": 0.0
+  }
+]
