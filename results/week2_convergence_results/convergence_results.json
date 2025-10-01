@@ -1,0 +1,2387 @@
+[
+  {
+    "threshold": 0.005,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.005,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 2.426392078399658,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0169830322265625,
+              "relative_change": 0.021417025591982337
+            },
+            {
+              "step": 3,
+              "mean_change": 0.01030731201171875,
+              "relative_change": 0.013030478230330744
+            },
+            {
+              "step": 4,
+              "mean_change": 0.025970458984375,
+              "relative_change": 0.03289270211895946
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03281636715836683
+            },
+            {
+              "step": 6,
+              "mean_change": 0.03448486328125,
+              "relative_change": 0.04397571550397095
+            },
+            {
+              "step": 7,
+              "mean_change": 0.037872314453125,
+              "relative_change": 0.04832554455469959
+            },
+            {
+              "step": 8,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.051867544844791384
+            },
+            {
+              "step": 9,
+              "mean_change": 0.040069580078125,
+              "relative_change": 0.05167663661313758
+            },
+            {
+              "step": 10,
+              "mean_change": 0.03826904296875,
+              "relative_change": 0.04979351904715929
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.043638106845454966
+            },
+            {
+              "step": 12,
+              "mean_change": 0.03070068359375,
+              "relative_change": 0.04061692452723862
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.03536774251511326
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.035835260585653575
+            },
+            {
+              "step": 15,
+              "mean_change": 0.026458740234375,
+              "relative_change": 0.03631869923337335
+            },
+            {
+              "step": 16,
+              "mean_change": 0.02801513671875,
+              "relative_change": 0.03903061170112453
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0291748046875,
+              "relative_change": 0.04134948038281151
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0307464599609375,
+              "relative_change": 0.04443807275222884
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031646728515625,
+              "relative_change": 0.046694884037239745
+            },
+            {
+              "step": 20,
+              "mean_change": 0.032806396484375,
+              "relative_change": 0.04951178996757446
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03375244140625,
+              "relative_change": 0.05216981051438662
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034698486328125,
+              "relative_change": 0.05500193411266283
+            },
+            {
+              "step": 23,
+              "mean_change": 0.03558349609375,
+              "relative_change": 0.057929251839116784
+            },
+            {
+              "step": 24,
+              "mean_change": 0.036285400390625,
+              "relative_change": 0.06066326429193171
+            },
+            {
+              "step": 25,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.06402055259132473
+            },
+            {
+              "step": 26,
+              "mean_change": 0.03851318359375,
+              "relative_change": 0.0679956884546968
+            },
+            {
+              "step": 27,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.0731194677013392
+            },
+            {
+              "step": 28,
+              "mean_change": 0.044403076171875,
+              "relative_change": 0.08259536631103259
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06591796875,
+              "relative_change": 0.12652295914602604
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0024814605712890625,
+              "relative_change": 0.004754004820054238
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.005,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8862979412078857,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.019866943359375,
+              "relative_change": 0.02506931576499101
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0176544189453125,
+              "relative_change": 0.022291152616200488
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01971435546875,
+              "relative_change": 0.02495364616127894
+            },
+            {
+              "step": 5,
+              "mean_change": 0.020263671875,
+              "relative_change": 0.025680692743848644
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0182647705078125,
+              "relative_change": 0.0232048694322359
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0183868408203125,
+              "relative_change": 0.023403511199935417
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0201263427734375,
+              "relative_change": 0.02571350559787112
+            },
+            {
+              "step": 9,
+              "mean_change": 0.0198211669921875,
+              "relative_change": 0.025418753587616735
+            },
+            {
+              "step": 10,
+              "mean_change": 0.021453857421875,
+              "relative_change": 0.027633647442806854
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0220947265625,
+              "relative_change": 0.02862112549894962
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0235137939453125,
+              "relative_change": 0.030633746420242285
+            },
+            {
+              "step": 13,
+              "mean_change": 0.024627685546875,
+              "relative_change": 0.03231101815392078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03421370922535692
+            },
+            {
+              "step": 15,
+              "mean_change": 0.0269927978515625,
+              "relative_change": 0.035943595100048874
+            },
+            {
+              "step": 16,
+              "mean_change": 0.028045654296875,
+              "relative_change": 0.037663933920421395
+            },
+            {
+              "step": 17,
+              "mean_change": 0.029083251953125,
+              "relative_change": 0.039419258234740955
+            },
+            {
+              "step": 18,
+              "mean_change": 0.029876708984375,
+              "relative_change": 0.040900734734193145
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0308074951171875,
+              "relative_change": 0.04260212635213265
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031494140625,
+              "relative_change": 0.043997270872398284
+            },
+            {
+              "step": 21,
+              "mean_change": 0.032135009765625,
+              "relative_change": 0.04535664994562082
+            },
+            {
+              "step": 22,
+              "mean_change": 0.032562255859375,
+              "relative_change": 0.046439762568881375
+            },
+            {
+              "step": 23,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.048063379588494354
+            },
+            {
+              "step": 24,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.049119842812251506
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0345458984375,
+              "relative_change": 0.05086268796429342
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035430908203125,
+              "relative_change": 0.05269607764762841
+            },
+            {
+              "step": 27,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.056263755574261394
+            },
+            {
+              "step": 28,
+              "mean_change": 0.040802001953125,
+              "relative_change": 0.061898147209130325
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06109619140625,
+              "relative_change": 0.09386721536204007
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028400421142578125,
+              "relative_change": 0.004356858547394409
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.005,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.886831283569336,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0111541748046875,
+              "relative_change": 0.014049046563515083
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0133819580078125,
+              "relative_change": 0.01685501208782863
+            },
+            {
+              "step": 4,
+              "mean_change": 0.019989013671875,
+              "relative_change": 0.025223351499338114
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0330810546875,
+              "relative_change": 0.04166666614186142
+            },
+            {
+              "step": 6,
+              "mean_change": 0.035736083984375,
+              "relative_change": 0.045177468564670024
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03985595703125,
+              "relative_change": 0.050323673840549414
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0404052734375,
+              "relative_change": 0.051143386250051576
+            },
+            {
+              "step": 9,
+              "mean_change": 0.037384033203125,
+              "relative_change": 0.047465901443210376
+            },
+            {
+              "step": 10,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.04760242025146023
+            },
+            {
+              "step": 11,
+              "mean_change": 0.033538818359375,
+              "relative_change": 0.0428226303759305
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.040156249486
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0305633544921875,
+              "relative_change": 0.03929300012258591
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0285491943359375,
+              "relative_change": 0.03681911161583413
+            },
+            {
+              "step": 15,
+              "mean_change": 0.03009033203125,
+              "relative_change": 0.03897849411873525
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0293426513671875,
+              "relative_change": 0.038203273501333096
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0303802490234375,
+              "relative_change": 0.03973100203468012
+            },
+            {
+              "step": 18,
+              "mean_change": 0.030670166015625,
+              "relative_change": 0.04034200332292599
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031158447265625,
+              "relative_change": 0.04119593231524035
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031951904296875,
+              "relative_change": 0.04249188255179626
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03240966796875,
+              "relative_change": 0.04332571743648127
+            },
+            {
+              "step": 22,
+              "mean_change": 0.033111572265625,
+              "relative_change": 0.04449639047815874
+            },
+            {
+              "step": 23,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.04558580796462221
+            },
+            {
+              "step": 24,
+              "mean_change": 0.03411865234375,
+              "relative_change": 0.04636695358354664
+            },
+            {
+              "step": 25,
+              "mean_change": 0.034912109375,
+              "relative_change": 0.047666666015857784
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035858154296875,
+              "relative_change": 0.04918787608347776
+            },
+            {
+              "step": 27,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.05164872068790995
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04150390625,
+              "relative_change": 0.05743243163769175
+            },
+            {
+              "step": 29,
+              "mean_change": 0.060516357421875,
+              "relative_change": 0.08419667002422024
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028095245361328125,
+              "relative_change": 0.0039035998439988294
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.005,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8841524124145508,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.01031494140625,
+              "relative_change": 0.012992004756410665
+            },
+            {
+              "step": 3,
+              "mean_change": 0.012237548828125,
+              "relative_change": 0.0154230767286987
+            },
+            {
+              "step": 4,
+              "mean_change": 0.0165863037109375,
+              "relative_change": 0.020903845890393374
+            },
+            {
+              "step": 5,
+              "mean_change": 0.01953125,
+              "relative_change": 0.02461538430515503
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.03956280738285326
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0498046875,
+              "relative_change": 0.06284657961361802
+            },
+            {
+              "step": 8,
+              "mean_change": 0.05474853515625,
+              "relative_change": 0.06925571252726559
+            },
+            {
+              "step": 9,
+              "mean_change": 0.06365966796875,
+              "relative_change": 0.08052810274909478
+            },
+            {
+              "step": 10,
+              "mean_change": 0.058441162109375,
+              "relative_change": 0.07410990618094682
+            },
+            {
+              "step": 11,
+              "mean_change": 0.059173583984375,
+              "relative_change": 0.07522501456200602
+            },
+            {
+              "step": 12,
+              "mean_change": 0.050994873046875,
+              "relative_change": 0.06498910931488677
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0521240234375,
+              "relative_change": 0.06655236822756078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.047943115234375,
+              "relative_change": 0.06148246633740707
+            },
+            {
+              "step": 15,
+              "mean_change": 0.048553466796875,
+              "relative_change": 0.06242153089868615
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0487060546875,
+              "relative_change": 0.06289407232782433
+            },
+            {
+              "step": 17,
+              "mean_change": 0.04986572265625,
+              "relative_change": 0.06455436073193849
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06222151414748783
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0455322265625,
+              "relative_change": 0.05958466375700069
+            },
+            {
+              "step": 20,
+              "mean_change": 0.042449951171875,
+              "relative_change": 0.055944336457052754
+            },
+            {
+              "step": 21,
+              "mean_change": 0.04071044921875,
+              "relative_change": 0.05392949475777745
+            },
+            {
+              "step": 22,
+              "mean_change": 0.039886474609375,
+              "relative_change": 0.05314736428857643
+            },
+            {
+              "step": 23,
+              "mean_change": 0.039398193359375,
+              "relative_change": 0.05280595478961652
+            },
+            {
+              "step": 24,
+              "mean_change": 0.039642333984375,
+              "relative_change": 0.05341282822770084
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0401611328125,
+              "relative_change": 0.054398147411326675
+            },
+            {
+              "step": 26,
+              "mean_change": 0.04119873046875,
+              "relative_change": 0.05610039817224989
+            },
+            {
+              "step": 27,
+              "mean_change": 0.043121337890625,
+              "relative_change": 0.058992985164878865
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04754638671875,
+              "relative_change": 0.06539623818716254
+            },
+            {
+              "step": 29,
+              "mean_change": 0.0711669921875,
+              "relative_change": 0.0986129891613031
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0027332305908203125,
+              "relative_change": 0.0037822001165814466
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.005,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.865647554397583,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.00815582275390625,
+              "relative_change": 0.010278846024301066
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0106964111328125,
+              "relative_change": 0.013497381222164899
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01226806640625,
+              "relative_change": 0.015518838593066204
+            },
+            {
+              "step": 5,
+              "mean_change": 0.014068603515625,
+              "relative_change": 0.0178184908070979
+            },
+            {
+              "step": 6,
+              "mean_change": 0.020599365234375,
+              "relative_change": 0.026170905374702142
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03021240234375,
+              "relative_change": 0.03838399454956314
+            },
+            {
+              "step": 8,
+              "mean_change": 0.033966064453125,
+              "relative_change": 0.04336814159091051
+            },
+            {
+              "step": 9,
+              "mean_change": 0.050323486328125,
+              "relative_change": 0.06409359371104677
+            },
+            {
+              "step": 10,
+              "mean_change": 0.052032470703125,
+              "relative_change": 0.06681034396973301
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06143934553219497
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0450439453125,
+              "relative_change": 0.05823863561065198
+            },
+            {
+              "step": 13,
+              "mean_change": 0.038787841796875,
+              "relative_change": 0.050500635070404955
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.049104285984865145
+            },
+            {
+              "step": 15,
+              "mean_change": 0.034820556640625,
+              "relative_change": 0.04597840042447605
+            },
+            {
+              "step": 16,
+              "mean_change": 0.035552978515625,
+              "relative_change": 0.04734232706789931
+            },
+            {
+              "step": 17,
+              "mean_change": 0.033447265625,
+              "relative_change": 0.04494750595766081
+            },
+            {
+              "step": 18,
+              "mean_change": 0.033294677734375,
+              "relative_change": 0.045097552299207755
+            },
+            {
+              "step": 19,
+              "mean_change": 0.03326416015625,
+              "relative_change": 0.045477302449015246
+            },
+            {
+              "step": 20,
+              "mean_change": 0.033203125,
+              "relative_change": 0.0458221017935063
+            },
+            {
+              "step": 21,
+              "mean_change": 0.0338134765625,
+              "relative_change": 0.04704483630198488
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034393310546875,
+              "relative_change": 0.04827792941142427
+            },
+            {
+              "step": 23,
+              "mean_change": 0.034759521484375,
+              "relative_change": 0.04923063554063387
+            },
+            {
+              "step": 24,
+              "mean_change": 0.0357666015625,
+              "relative_change": 0.05108089187856578
+            },
+            {
+              "step": 25,
+              "mean_change": 0.03643798828125,
+              "relative_change": 0.05247890219777221
+            },
+            {
+              "step": 26,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.054045679102793544
+            },
+            {
+              "step": 27,
+              "mean_change": 0.039154052734375,
+              "relative_change": 0.05719507762385507
+            },
+            {
+              "step": 28,
+              "mean_change": 0.0428466796875,
+              "relative_change": 0.06294834914692812
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06353759765625,
+              "relative_change": 0.09422519773372046
+            },
+            {
+              "step": 30,
+              "mean_change": 0.002582550048828125,
+              "relative_change": 0.0038243401458261123
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "threshold": 0.01,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8739299774169922,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0169830322265625,
+              "relative_change": 0.021417025591982337
+            },
+            {
+              "step": 3,
+              "mean_change": 0.01030731201171875,
+              "relative_change": 0.013030478230330744
+            },
+            {
+              "step": 4,
+              "mean_change": 0.025970458984375,
+              "relative_change": 0.03289270211895946
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03281636715836683
+            },
+            {
+              "step": 6,
+              "mean_change": 0.03448486328125,
+              "relative_change": 0.04397571550397095
+            },
+            {
+              "step": 7,
+              "mean_change": 0.037872314453125,
+              "relative_change": 0.04832554455469959
+            },
+            {
+              "step": 8,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.051867544844791384
+            },
+            {
+              "step": 9,
+              "mean_change": 0.040069580078125,
+              "relative_change": 0.05167663661313758
+            },
+            {
+              "step": 10,
+              "mean_change": 0.03826904296875,
+              "relative_change": 0.04979351904715929
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.043638106845454966
+            },
+            {
+              "step": 12,
+              "mean_change": 0.03070068359375,
+              "relative_change": 0.04061692452723862
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.03536774251511326
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.035835260585653575
+            },
+            {
+              "step": 15,
+              "mean_change": 0.026458740234375,
+              "relative_change": 0.03631869923337335
+            },
+            {
+              "step": 16,
+              "mean_change": 0.02801513671875,
+              "relative_change": 0.03903061170112453
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0291748046875,
+              "relative_change": 0.04134948038281151
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0307464599609375,
+              "relative_change": 0.04443807275222884
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031646728515625,
+              "relative_change": 0.046694884037239745
+            },
+            {
+              "step": 20,
+              "mean_change": 0.032806396484375,
+              "relative_change": 0.04951178996757446
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03375244140625,
+              "relative_change": 0.05216981051438662
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034698486328125,
+              "relative_change": 0.05500193411266283
+            },
+            {
+              "step": 23,
+              "mean_change": 0.03558349609375,
+              "relative_change": 0.057929251839116784
+            },
+            {
+              "step": 24,
+              "mean_change": 0.036285400390625,
+              "relative_change": 0.06066326429193171
+            },
+            {
+              "step": 25,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.06402055259132473
+            },
+            {
+              "step": 26,
+              "mean_change": 0.03851318359375,
+              "relative_change": 0.0679956884546968
+            },
+            {
+              "step": 27,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.0731194677013392
+            },
+            {
+              "step": 28,
+              "mean_change": 0.044403076171875,
+              "relative_change": 0.08259536631103259
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06591796875,
+              "relative_change": 0.12652295914602604
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0024814605712890625,
+              "relative_change": 0.004754004820054238
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8864943981170654,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.019866943359375,
+              "relative_change": 0.02506931576499101
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0176544189453125,
+              "relative_change": 0.022291152616200488
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01971435546875,
+              "relative_change": 0.02495364616127894
+            },
+            {
+              "step": 5,
+              "mean_change": 0.020263671875,
+              "relative_change": 0.025680692743848644
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0182647705078125,
+              "relative_change": 0.0232048694322359
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0183868408203125,
+              "relative_change": 0.023403511199935417
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0201263427734375,
+              "relative_change": 0.02571350559787112
+            },
+            {
+              "step": 9,
+              "mean_change": 0.0198211669921875,
+              "relative_change": 0.025418753587616735
+            },
+            {
+              "step": 10,
+              "mean_change": 0.021453857421875,
+              "relative_change": 0.027633647442806854
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0220947265625,
+              "relative_change": 0.02862112549894962
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0235137939453125,
+              "relative_change": 0.030633746420242285
+            },
+            {
+              "step": 13,
+              "mean_change": 0.024627685546875,
+              "relative_change": 0.03231101815392078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03421370922535692
+            },
+            {
+              "step": 15,
+              "mean_change": 0.0269927978515625,
+              "relative_change": 0.035943595100048874
+            },
+            {
+              "step": 16,
+              "mean_change": 0.028045654296875,
+              "relative_change": 0.037663933920421395
+            },
+            {
+              "step": 17,
+              "mean_change": 0.029083251953125,
+              "relative_change": 0.039419258234740955
+            },
+            {
+              "step": 18,
+              "mean_change": 0.029876708984375,
+              "relative_change": 0.040900734734193145
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0308074951171875,
+              "relative_change": 0.04260212635213265
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031494140625,
+              "relative_change": 0.043997270872398284
+            },
+            {
+              "step": 21,
+              "mean_change": 0.032135009765625,
+              "relative_change": 0.04535664994562082
+            },
+            {
+              "step": 22,
+              "mean_change": 0.032562255859375,
+              "relative_change": 0.046439762568881375
+            },
+            {
+              "step": 23,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.048063379588494354
+            },
+            {
+              "step": 24,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.049119842812251506
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0345458984375,
+              "relative_change": 0.05086268796429342
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035430908203125,
+              "relative_change": 0.05269607764762841
+            },
+            {
+              "step": 27,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.056263755574261394
+            },
+            {
+              "step": 28,
+              "mean_change": 0.040802001953125,
+              "relative_change": 0.061898147209130325
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06109619140625,
+              "relative_change": 0.09386721536204007
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028400421142578125,
+              "relative_change": 0.004356858547394409
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8630070686340332,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0111541748046875,
+              "relative_change": 0.014049046563515083
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0133819580078125,
+              "relative_change": 0.01685501208782863
+            },
+            {
+              "step": 4,
+              "mean_change": 0.019989013671875,
+              "relative_change": 0.025223351499338114
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0330810546875,
+              "relative_change": 0.04166666614186142
+            },
+            {
+              "step": 6,
+              "mean_change": 0.035736083984375,
+              "relative_change": 0.045177468564670024
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03985595703125,
+              "relative_change": 0.050323673840549414
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0404052734375,
+              "relative_change": 0.051143386250051576
+            },
+            {
+              "step": 9,
+              "mean_change": 0.037384033203125,
+              "relative_change": 0.047465901443210376
+            },
+            {
+              "step": 10,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.04760242025146023
+            },
+            {
+              "step": 11,
+              "mean_change": 0.033538818359375,
+              "relative_change": 0.0428226303759305
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.040156249486
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0305633544921875,
+              "relative_change": 0.03929300012258591
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0285491943359375,
+              "relative_change": 0.03681911161583413
+            },
+            {
+              "step": 15,
+              "mean_change": 0.03009033203125,
+              "relative_change": 0.03897849411873525
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0293426513671875,
+              "relative_change": 0.038203273501333096
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0303802490234375,
+              "relative_change": 0.03973100203468012
+            },
+            {
+              "step": 18,
+              "mean_change": 0.030670166015625,
+              "relative_change": 0.04034200332292599
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031158447265625,
+              "relative_change": 0.04119593231524035
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031951904296875,
+              "relative_change": 0.04249188255179626
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03240966796875,
+              "relative_change": 0.04332571743648127
+            },
+            {
+              "step": 22,
+              "mean_change": 0.033111572265625,
+              "relative_change": 0.04449639047815874
+            },
+            {
+              "step": 23,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.04558580796462221
+            },
+            {
+              "step": 24,
+              "mean_change": 0.03411865234375,
+              "relative_change": 0.04636695358354664
+            },
+            {
+              "step": 25,
+              "mean_change": 0.034912109375,
+              "relative_change": 0.047666666015857784
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035858154296875,
+              "relative_change": 0.04918787608347776
+            },
+            {
+              "step": 27,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.05164872068790995
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04150390625,
+              "relative_change": 0.05743243163769175
+            },
+            {
+              "step": 29,
+              "mean_change": 0.060516357421875,
+              "relative_change": 0.08419667002422024
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028095245361328125,
+              "relative_change": 0.0039035998439988294
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.866297960281372,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.01031494140625,
+              "relative_change": 0.012992004756410665
+            },
+            {
+              "step": 3,
+              "mean_change": 0.012237548828125,
+              "relative_change": 0.0154230767286987
+            },
+            {
+              "step": 4,
+              "mean_change": 0.0165863037109375,
+              "relative_change": 0.020903845890393374
+            },
+            {
+              "step": 5,
+              "mean_change": 0.01953125,
+              "relative_change": 0.02461538430515503
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.03956280738285326
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0498046875,
+              "relative_change": 0.06284657961361802
+            },
+            {
+              "step": 8,
+              "mean_change": 0.05474853515625,
+              "relative_change": 0.06925571252726559
+            },
+            {
+              "step": 9,
+              "mean_change": 0.06365966796875,
+              "relative_change": 0.08052810274909478
+            },
+            {
+              "step": 10,
+              "mean_change": 0.058441162109375,
+              "relative_change": 0.07410990618094682
+            },
+            {
+              "step": 11,
+              "mean_change": 0.059173583984375,
+              "relative_change": 0.07522501456200602
+            },
+            {
+              "step": 12,
+              "mean_change": 0.050994873046875,
+              "relative_change": 0.06498910931488677
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0521240234375,
+              "relative_change": 0.06655236822756078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.047943115234375,
+              "relative_change": 0.06148246633740707
+            },
+            {
+              "step": 15,
+              "mean_change": 0.048553466796875,
+              "relative_change": 0.06242153089868615
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0487060546875,
+              "relative_change": 0.06289407232782433
+            },
+            {
+              "step": 17,
+              "mean_change": 0.04986572265625,
+              "relative_change": 0.06455436073193849
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06222151414748783
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0455322265625,
+              "relative_change": 0.05958466375700069
+            },
+            {
+              "step": 20,
+              "mean_change": 0.042449951171875,
+              "relative_change": 0.055944336457052754
+            },
+            {
+              "step": 21,
+              "mean_change": 0.04071044921875,
+              "relative_change": 0.05392949475777745
+            },
+            {
+              "step": 22,
+              "mean_change": 0.039886474609375,
+              "relative_change": 0.05314736428857643
+            },
+            {
+              "step": 23,
+              "mean_change": 0.039398193359375,
+              "relative_change": 0.05280595478961652
+            },
+            {
+              "step": 24,
+              "mean_change": 0.039642333984375,
+              "relative_change": 0.05341282822770084
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0401611328125,
+              "relative_change": 0.054398147411326675
+            },
+            {
+              "step": 26,
+              "mean_change": 0.04119873046875,
+              "relative_change": 0.05610039817224989
+            },
+            {
+              "step": 27,
+              "mean_change": 0.043121337890625,
+              "relative_change": 0.058992985164878865
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04754638671875,
+              "relative_change": 0.06539623818716254
+            },
+            {
+              "step": 29,
+              "mean_change": 0.0711669921875,
+              "relative_change": 0.0986129891613031
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0027332305908203125,
+              "relative_change": 0.0037822001165814466
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.01,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8666296005249023,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.00815582275390625,
+              "relative_change": 0.010278846024301066
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0106964111328125,
+              "relative_change": 0.013497381222164899
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01226806640625,
+              "relative_change": 0.015518838593066204
+            },
+            {
+              "step": 5,
+              "mean_change": 0.014068603515625,
+              "relative_change": 0.0178184908070979
+            },
+            {
+              "step": 6,
+              "mean_change": 0.020599365234375,
+              "relative_change": 0.026170905374702142
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03021240234375,
+              "relative_change": 0.03838399454956314
+            },
+            {
+              "step": 8,
+              "mean_change": 0.033966064453125,
+              "relative_change": 0.04336814159091051
+            },
+            {
+              "step": 9,
+              "mean_change": 0.050323486328125,
+              "relative_change": 0.06409359371104677
+            },
+            {
+              "step": 10,
+              "mean_change": 0.052032470703125,
+              "relative_change": 0.06681034396973301
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06143934553219497
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0450439453125,
+              "relative_change": 0.05823863561065198
+            },
+            {
+              "step": 13,
+              "mean_change": 0.038787841796875,
+              "relative_change": 0.050500635070404955
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.049104285984865145
+            },
+            {
+              "step": 15,
+              "mean_change": 0.034820556640625,
+              "relative_change": 0.04597840042447605
+            },
+            {
+              "step": 16,
+              "mean_change": 0.035552978515625,
+              "relative_change": 0.04734232706789931
+            },
+            {
+              "step": 17,
+              "mean_change": 0.033447265625,
+              "relative_change": 0.04494750595766081
+            },
+            {
+              "step": 18,
+              "mean_change": 0.033294677734375,
+              "relative_change": 0.045097552299207755
+            },
+            {
+              "step": 19,
+              "mean_change": 0.03326416015625,
+              "relative_change": 0.045477302449015246
+            },
+            {
+              "step": 20,
+              "mean_change": 0.033203125,
+              "relative_change": 0.0458221017935063
+            },
+            {
+              "step": 21,
+              "mean_change": 0.0338134765625,
+              "relative_change": 0.04704483630198488
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034393310546875,
+              "relative_change": 0.04827792941142427
+            },
+            {
+              "step": 23,
+              "mean_change": 0.034759521484375,
+              "relative_change": 0.04923063554063387
+            },
+            {
+              "step": 24,
+              "mean_change": 0.0357666015625,
+              "relative_change": 0.05108089187856578
+            },
+            {
+              "step": 25,
+              "mean_change": 0.03643798828125,
+              "relative_change": 0.05247890219777221
+            },
+            {
+              "step": 26,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.054045679102793544
+            },
+            {
+              "step": 27,
+              "mean_change": 0.039154052734375,
+              "relative_change": 0.05719507762385507
+            },
+            {
+              "step": 28,
+              "mean_change": 0.0428466796875,
+              "relative_change": 0.06294834914692812
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06353759765625,
+              "relative_change": 0.09422519773372046
+            },
+            {
+              "step": 30,
+              "mean_change": 0.002582550048828125,
+              "relative_change": 0.0038243401458261123
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "threshold": 0.02,
+    "results": [
+      {
+        "prompt": "a red apple",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8595671653747559,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0169830322265625,
+              "relative_change": 0.021417025591982337
+            },
+            {
+              "step": 3,
+              "mean_change": 0.01030731201171875,
+              "relative_change": 0.013030478230330744
+            },
+            {
+              "step": 4,
+              "mean_change": 0.025970458984375,
+              "relative_change": 0.03289270211895946
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03281636715836683
+            },
+            {
+              "step": 6,
+              "mean_change": 0.03448486328125,
+              "relative_change": 0.04397571550397095
+            },
+            {
+              "step": 7,
+              "mean_change": 0.037872314453125,
+              "relative_change": 0.04832554455469959
+            },
+            {
+              "step": 8,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.051867544844791384
+            },
+            {
+              "step": 9,
+              "mean_change": 0.040069580078125,
+              "relative_change": 0.05167663661313758
+            },
+            {
+              "step": 10,
+              "mean_change": 0.03826904296875,
+              "relative_change": 0.04979351904715929
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.043638106845454966
+            },
+            {
+              "step": 12,
+              "mean_change": 0.03070068359375,
+              "relative_change": 0.04061692452723862
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.03536774251511326
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0264739990234375,
+              "relative_change": 0.035835260585653575
+            },
+            {
+              "step": 15,
+              "mean_change": 0.026458740234375,
+              "relative_change": 0.03631869923337335
+            },
+            {
+              "step": 16,
+              "mean_change": 0.02801513671875,
+              "relative_change": 0.03903061170112453
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0291748046875,
+              "relative_change": 0.04134948038281151
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0307464599609375,
+              "relative_change": 0.04443807275222884
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031646728515625,
+              "relative_change": 0.046694884037239745
+            },
+            {
+              "step": 20,
+              "mean_change": 0.032806396484375,
+              "relative_change": 0.04951178996757446
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03375244140625,
+              "relative_change": 0.05216981051438662
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034698486328125,
+              "relative_change": 0.05500193411266283
+            },
+            {
+              "step": 23,
+              "mean_change": 0.03558349609375,
+              "relative_change": 0.057929251839116784
+            },
+            {
+              "step": 24,
+              "mean_change": 0.036285400390625,
+              "relative_change": 0.06066326429193171
+            },
+            {
+              "step": 25,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.06402055259132473
+            },
+            {
+              "step": 26,
+              "mean_change": 0.03851318359375,
+              "relative_change": 0.0679956884546968
+            },
+            {
+              "step": 27,
+              "mean_change": 0.04034423828125,
+              "relative_change": 0.0731194677013392
+            },
+            {
+              "step": 28,
+              "mean_change": 0.044403076171875,
+              "relative_change": 0.08259536631103259
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06591796875,
+              "relative_change": 0.12652295914602604
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0024814605712890625,
+              "relative_change": 0.004754004820054238
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a serene mountain landscape at sunset",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8381657600402832,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.019866943359375,
+              "relative_change": 0.02506931576499101
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0176544189453125,
+              "relative_change": 0.022291152616200488
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01971435546875,
+              "relative_change": 0.02495364616127894
+            },
+            {
+              "step": 5,
+              "mean_change": 0.020263671875,
+              "relative_change": 0.025680692743848644
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0182647705078125,
+              "relative_change": 0.0232048694322359
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0183868408203125,
+              "relative_change": 0.023403511199935417
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0201263427734375,
+              "relative_change": 0.02571350559787112
+            },
+            {
+              "step": 9,
+              "mean_change": 0.0198211669921875,
+              "relative_change": 0.025418753587616735
+            },
+            {
+              "step": 10,
+              "mean_change": 0.021453857421875,
+              "relative_change": 0.027633647442806854
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0220947265625,
+              "relative_change": 0.02862112549894962
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0235137939453125,
+              "relative_change": 0.030633746420242285
+            },
+            {
+              "step": 13,
+              "mean_change": 0.024627685546875,
+              "relative_change": 0.03231101815392078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0258941650390625,
+              "relative_change": 0.03421370922535692
+            },
+            {
+              "step": 15,
+              "mean_change": 0.0269927978515625,
+              "relative_change": 0.035943595100048874
+            },
+            {
+              "step": 16,
+              "mean_change": 0.028045654296875,
+              "relative_change": 0.037663933920421395
+            },
+            {
+              "step": 17,
+              "mean_change": 0.029083251953125,
+              "relative_change": 0.039419258234740955
+            },
+            {
+              "step": 18,
+              "mean_change": 0.029876708984375,
+              "relative_change": 0.040900734734193145
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0308074951171875,
+              "relative_change": 0.04260212635213265
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031494140625,
+              "relative_change": 0.043997270872398284
+            },
+            {
+              "step": 21,
+              "mean_change": 0.032135009765625,
+              "relative_change": 0.04535664994562082
+            },
+            {
+              "step": 22,
+              "mean_change": 0.032562255859375,
+              "relative_change": 0.046439762568881375
+            },
+            {
+              "step": 23,
+              "mean_change": 0.0333251953125,
+              "relative_change": 0.048063379588494354
+            },
+            {
+              "step": 24,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.049119842812251506
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0345458984375,
+              "relative_change": 0.05086268796429342
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035430908203125,
+              "relative_change": 0.05269607764762841
+            },
+            {
+              "step": 27,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.056263755574261394
+            },
+            {
+              "step": 28,
+              "mean_change": 0.040802001953125,
+              "relative_change": 0.061898147209130325
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06109619140625,
+              "relative_change": 0.09386721536204007
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028400421142578125,
+              "relative_change": 0.004356858547394409
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cyberpunk city street at night with neon lights",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.85546875,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.0111541748046875,
+              "relative_change": 0.014049046563515083
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0133819580078125,
+              "relative_change": 0.01685501208782863
+            },
+            {
+              "step": 4,
+              "mean_change": 0.019989013671875,
+              "relative_change": 0.025223351499338114
+            },
+            {
+              "step": 5,
+              "mean_change": 0.0330810546875,
+              "relative_change": 0.04166666614186142
+            },
+            {
+              "step": 6,
+              "mean_change": 0.035736083984375,
+              "relative_change": 0.045177468564670024
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03985595703125,
+              "relative_change": 0.050323673840549414
+            },
+            {
+              "step": 8,
+              "mean_change": 0.0404052734375,
+              "relative_change": 0.051143386250051576
+            },
+            {
+              "step": 9,
+              "mean_change": 0.037384033203125,
+              "relative_change": 0.047465901443210376
+            },
+            {
+              "step": 10,
+              "mean_change": 0.037445068359375,
+              "relative_change": 0.04760242025146023
+            },
+            {
+              "step": 11,
+              "mean_change": 0.033538818359375,
+              "relative_change": 0.0428226303759305
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.040156249486
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0305633544921875,
+              "relative_change": 0.03929300012258591
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0285491943359375,
+              "relative_change": 0.03681911161583413
+            },
+            {
+              "step": 15,
+              "mean_change": 0.03009033203125,
+              "relative_change": 0.03897849411873525
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0293426513671875,
+              "relative_change": 0.038203273501333096
+            },
+            {
+              "step": 17,
+              "mean_change": 0.0303802490234375,
+              "relative_change": 0.03973100203468012
+            },
+            {
+              "step": 18,
+              "mean_change": 0.030670166015625,
+              "relative_change": 0.04034200332292599
+            },
+            {
+              "step": 19,
+              "mean_change": 0.031158447265625,
+              "relative_change": 0.04119593231524035
+            },
+            {
+              "step": 20,
+              "mean_change": 0.031951904296875,
+              "relative_change": 0.04249188255179626
+            },
+            {
+              "step": 21,
+              "mean_change": 0.03240966796875,
+              "relative_change": 0.04332571743648127
+            },
+            {
+              "step": 22,
+              "mean_change": 0.033111572265625,
+              "relative_change": 0.04449639047815874
+            },
+            {
+              "step": 23,
+              "mean_change": 0.033721923828125,
+              "relative_change": 0.04558580796462221
+            },
+            {
+              "step": 24,
+              "mean_change": 0.03411865234375,
+              "relative_change": 0.04636695358354664
+            },
+            {
+              "step": 25,
+              "mean_change": 0.034912109375,
+              "relative_change": 0.047666666015857784
+            },
+            {
+              "step": 26,
+              "mean_change": 0.035858154296875,
+              "relative_change": 0.04918787608347776
+            },
+            {
+              "step": 27,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.05164872068790995
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04150390625,
+              "relative_change": 0.05743243163769175
+            },
+            {
+              "step": 29,
+              "mean_change": 0.060516357421875,
+              "relative_change": 0.08419667002422024
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0028095245361328125,
+              "relative_change": 0.0039035998439988294
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "a cute robot reading a book",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.841799020767212,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.01031494140625,
+              "relative_change": 0.012992004756410665
+            },
+            {
+              "step": 3,
+              "mean_change": 0.012237548828125,
+              "relative_change": 0.0154230767286987
+            },
+            {
+              "step": 4,
+              "mean_change": 0.0165863037109375,
+              "relative_change": 0.020903845890393374
+            },
+            {
+              "step": 5,
+              "mean_change": 0.01953125,
+              "relative_change": 0.02461538430515503
+            },
+            {
+              "step": 6,
+              "mean_change": 0.0313720703125,
+              "relative_change": 0.03956280738285326
+            },
+            {
+              "step": 7,
+              "mean_change": 0.0498046875,
+              "relative_change": 0.06284657961361802
+            },
+            {
+              "step": 8,
+              "mean_change": 0.05474853515625,
+              "relative_change": 0.06925571252726559
+            },
+            {
+              "step": 9,
+              "mean_change": 0.06365966796875,
+              "relative_change": 0.08052810274909478
+            },
+            {
+              "step": 10,
+              "mean_change": 0.058441162109375,
+              "relative_change": 0.07410990618094682
+            },
+            {
+              "step": 11,
+              "mean_change": 0.059173583984375,
+              "relative_change": 0.07522501456200602
+            },
+            {
+              "step": 12,
+              "mean_change": 0.050994873046875,
+              "relative_change": 0.06498910931488677
+            },
+            {
+              "step": 13,
+              "mean_change": 0.0521240234375,
+              "relative_change": 0.06655236822756078
+            },
+            {
+              "step": 14,
+              "mean_change": 0.047943115234375,
+              "relative_change": 0.06148246633740707
+            },
+            {
+              "step": 15,
+              "mean_change": 0.048553466796875,
+              "relative_change": 0.06242153089868615
+            },
+            {
+              "step": 16,
+              "mean_change": 0.0487060546875,
+              "relative_change": 0.06289407232782433
+            },
+            {
+              "step": 17,
+              "mean_change": 0.04986572265625,
+              "relative_change": 0.06455436073193849
+            },
+            {
+              "step": 18,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06222151414748783
+            },
+            {
+              "step": 19,
+              "mean_change": 0.0455322265625,
+              "relative_change": 0.05958466375700069
+            },
+            {
+              "step": 20,
+              "mean_change": 0.042449951171875,
+              "relative_change": 0.055944336457052754
+            },
+            {
+              "step": 21,
+              "mean_change": 0.04071044921875,
+              "relative_change": 0.05392949475777745
+            },
+            {
+              "step": 22,
+              "mean_change": 0.039886474609375,
+              "relative_change": 0.05314736428857643
+            },
+            {
+              "step": 23,
+              "mean_change": 0.039398193359375,
+              "relative_change": 0.05280595478961652
+            },
+            {
+              "step": 24,
+              "mean_change": 0.039642333984375,
+              "relative_change": 0.05341282822770084
+            },
+            {
+              "step": 25,
+              "mean_change": 0.0401611328125,
+              "relative_change": 0.054398147411326675
+            },
+            {
+              "step": 26,
+              "mean_change": 0.04119873046875,
+              "relative_change": 0.05610039817224989
+            },
+            {
+              "step": 27,
+              "mean_change": 0.043121337890625,
+              "relative_change": 0.058992985164878865
+            },
+            {
+              "step": 28,
+              "mean_change": 0.04754638671875,
+              "relative_change": 0.06539623818716254
+            },
+            {
+              "step": 29,
+              "mean_change": 0.0711669921875,
+              "relative_change": 0.0986129891613031
+            },
+            {
+              "step": 30,
+              "mean_change": 0.0027332305908203125,
+              "relative_change": 0.0037822001165814466
+            }
+          ]
+        }
+      },
+      {
+        "prompt": "an intricate steampunk mechanical clock",
+        "threshold": 0.02,
+        "data": {
+          "stopped_early": false,
+          "actual_steps": 30,
+          "max_steps": 30,
+          "generation_time": 1.8701891899108887,
+          "savings_percent": 0,
+          "convergence_history": [
+            {
+              "step": 2,
+              "mean_change": 0.00815582275390625,
+              "relative_change": 0.010278846024301066
+            },
+            {
+              "step": 3,
+              "mean_change": 0.0106964111328125,
+              "relative_change": 0.013497381222164899
+            },
+            {
+              "step": 4,
+              "mean_change": 0.01226806640625,
+              "relative_change": 0.015518838593066204
+            },
+            {
+              "step": 5,
+              "mean_change": 0.014068603515625,
+              "relative_change": 0.0178184908070979
+            },
+            {
+              "step": 6,
+              "mean_change": 0.020599365234375,
+              "relative_change": 0.026170905374702142
+            },
+            {
+              "step": 7,
+              "mean_change": 0.03021240234375,
+              "relative_change": 0.03838399454956314
+            },
+            {
+              "step": 8,
+              "mean_change": 0.033966064453125,
+              "relative_change": 0.04336814159091051
+            },
+            {
+              "step": 9,
+              "mean_change": 0.050323486328125,
+              "relative_change": 0.06409359371104677
+            },
+            {
+              "step": 10,
+              "mean_change": 0.052032470703125,
+              "relative_change": 0.06681034396973301
+            },
+            {
+              "step": 11,
+              "mean_change": 0.0477294921875,
+              "relative_change": 0.06143934553219497
+            },
+            {
+              "step": 12,
+              "mean_change": 0.0450439453125,
+              "relative_change": 0.05823863561065198
+            },
+            {
+              "step": 13,
+              "mean_change": 0.038787841796875,
+              "relative_change": 0.050500635070404955
+            },
+            {
+              "step": 14,
+              "mean_change": 0.0374755859375,
+              "relative_change": 0.049104285984865145
+            },
+            {
+              "step": 15,
+              "mean_change": 0.034820556640625,
+              "relative_change": 0.04597840042447605
+            },
+            {
+              "step": 16,
+              "mean_change": 0.035552978515625,
+              "relative_change": 0.04734232706789931
+            },
+            {
+              "step": 17,
+              "mean_change": 0.033447265625,
+              "relative_change": 0.04494750595766081
+            },
+            {
+              "step": 18,
+              "mean_change": 0.033294677734375,
+              "relative_change": 0.045097552299207755
+            },
+            {
+              "step": 19,
+              "mean_change": 0.03326416015625,
+              "relative_change": 0.045477302449015246
+            },
+            {
+              "step": 20,
+              "mean_change": 0.033203125,
+              "relative_change": 0.0458221017935063
+            },
+            {
+              "step": 21,
+              "mean_change": 0.0338134765625,
+              "relative_change": 0.04704483630198488
+            },
+            {
+              "step": 22,
+              "mean_change": 0.034393310546875,
+              "relative_change": 0.04827792941142427
+            },
+            {
+              "step": 23,
+              "mean_change": 0.034759521484375,
+              "relative_change": 0.04923063554063387
+            },
+            {
+              "step": 24,
+              "mean_change": 0.0357666015625,
+              "relative_change": 0.05108089187856578
+            },
+            {
+              "step": 25,
+              "mean_change": 0.03643798828125,
+              "relative_change": 0.05247890219777221
+            },
+            {
+              "step": 26,
+              "mean_change": 0.037261962890625,
+              "relative_change": 0.054045679102793544
+            },
+            {
+              "step": 27,
+              "mean_change": 0.039154052734375,
+              "relative_change": 0.05719507762385507
+            },
+            {
+              "step": 28,
+              "mean_change": 0.0428466796875,
+              "relative_change": 0.06294834914692812
+            },
+            {
+              "step": 29,
+              "mean_change": 0.06353759765625,
+              "relative_change": 0.09422519773372046
+            },
+            {
+              "step": 30,
+              "mean_change": 0.002582550048828125,
+              "relative_change": 0.0038243401458261123
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
