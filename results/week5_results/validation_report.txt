@@ -1,0 +1,24 @@
+STEP PREDICTOR VALIDATION REPORT
+================================================================================
+
+Training completed: 2025-10-01 20:08:09
+Best validation MAE: 7.93 steps
+
+Threshold 0.10:
+----------------------------------------
+MAE (continuous): 10.62 steps
+MAE (rounded): 10.62 steps
+Exact match rate: 4.3%
+Within 1 bucket: 13.0%
+Predicted speedup: 50.0%
+Actual speedup: 14.6%
+
+Threshold 0.12:
+----------------------------------------
+MAE (continuous): 9.35 steps
+MAE (rounded): 9.35 steps
+Exact match rate: 11.6%
+Within 1 bucket: 20.3%
+Predicted speedup: 50.0%
+Actual speedup: 18.8%
+

@@ -1,0 +1,19 @@
+BINARY STEP PREDICTOR VALIDATION REPORT
+================================================================================
+
+Training completed: 2025-10-01 20:18:29
+Best validation accuracy: 0.786
+
+Classification Metrics:
+  Accuracy: 95.7%
+  Precision: 96.6%
+  Recall: 93.3%
+  F1 Score: 0.949
+
+Confusion Matrix:
+  TN: 38, FP: 1
+  FN: 2, TP: 28
+
+Speedup: 14.0%
+Quality (LPIPS): 0.1050
+Quality maintained: 79.3%
